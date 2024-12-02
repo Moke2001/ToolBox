@@ -1,10 +1,11 @@
 import numpy as np
 from tenpy import SpinHalfSite, Lattice
 from TenpyToolBox.Dynamics.EvolveTDVP import evolve_tdvp
-from TenpyToolBox.Package.MatrixPackage import MatrixPackage
 from TenpyToolBox.Dynamics.Measurement import measurement
-from TenpyToolBox.Package.ModelPackage import ModelPackage
-from TenpyToolBox.Package.Term import OnsiteTerm, OverallCouplingTerm
+from TenpyToolBox.Package.LinearPackage.MatrixPackage import MatrixPackage
+from TenpyToolBox.Package.ModelPackage.ModelPackage import ModelPackage
+from TenpyToolBox.Package.Term.OnsiteTerm import OnsiteTerm
+from TenpyToolBox.Package.Term.OverallCouplingTerm import OverallCouplingTerm
 
 
 def example():

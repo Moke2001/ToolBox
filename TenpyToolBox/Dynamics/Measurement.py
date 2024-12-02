@@ -2,11 +2,11 @@
 import random
 import numpy as np
 from tenpy import MPS
-from TenpyToolBox.Package.ModelPackage import ModelPackage
+from TenpyToolBox.Package.ModelPackage.ModelPackage import ModelPackage
 
 
 def measurement(psi,projector_list,value_list,position,model:ModelPackage):
-    mps_index=model.get_mps_index(position)
+    mps_index=model.mps_index2position(position)
     assert isinstance(psi,MPS),'psi must be an MPS object'
     psi_result=psi.copy()
     probability_list=[]

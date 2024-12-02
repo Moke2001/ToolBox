@@ -1,6 +1,6 @@
 from tenpy.algorithms import tdvp
 
-from TenpyToolBox.Package.ModelPackage import ModelPackage
+from TenpyToolBox.Package.ModelPackage.ModelPackage import ModelPackage
 
 
 def evolve_tdvp(dt, N_steps, chi_max, psi_origin, model:ModelPackage):
