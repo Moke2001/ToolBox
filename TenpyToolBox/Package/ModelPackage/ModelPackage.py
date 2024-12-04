@@ -66,6 +66,7 @@ class ModelPackage(Terms):
         self.build()
         return self.model.calc_H_MPO()
 
+
     #%%  BLOCK：按照要求生成模型对应的态矢
     def state_creator(self,type,*args):
         if type=='product':

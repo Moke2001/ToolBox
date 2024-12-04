@@ -1,15 +1,14 @@
-##  矩阵包：用名称生成所需要的矩阵的array形式
 import numpy as np
 
 
 class MatrixPackage():
-    ##  构造函数
+    #%%  BLOCK：构造函数
     def __init__(self):
         pass
 
 
+    #%%  BLOCK：由名称生成矩阵的array形式
     @classmethod
-    ##  由名称生成矩阵的array形式
     def get_array(cls,type):
         if type=='sigmax':
             matrix=np.array([[0,1],[1,0]],dtype=complex)
@@ -31,5 +30,6 @@ class MatrixPackage():
             raise ValueError("Type does not exist")
         return matrix
 
-    ##  SpinHalfSite所需要的矩阵名称列表
+
+    #%%  BLOCK：SpinHalfSite所需要的矩阵名称列表
     spin_half_site=['sigmax','sigmay','sigmaz','sigmaup','sigmadown','sigmaplus','sigmaminus','identity']

@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/CouplingTerm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/MultiTerm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OnsiteTerm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallCouplingTerm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallMultiTerm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallOnsiteTerm.py" afterDir="false" />
+    <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TenpyToolBox/Dynamics/EvolveTDVP.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Dynamics/EvolveTDVP.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TenpyToolBox/Dynamics/Measurement.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Dynamics/Measurement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Example.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/MatrixPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/ModelPackage/MatrixPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/ModelPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/ModelPackage/ModelPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/Term.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/Term.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/TermList.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Termlist/TermList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/LinearPackage/MatrixPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/LinearPackage/MatrixPackage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/Term/CouplingTerm.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/CouplingTerm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/Term/MultiTerm.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/MultiTerm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OnsiteTerm.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OnsiteTerm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallCouplingTerm.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallCouplingTerm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallMultiTerm.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallMultiTerm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallOnsiteTerm.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyToolBox/Package/Term/OverallOnsiteTerm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Example.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -68,7 +65,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.toDoOptions",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Python",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -77,10 +74,42 @@
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyToolBox\Package\Term" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyToolBox\Package\LinearPackage" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyToolBox\Package" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyToolBox\Package\Termlist" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyToolBox\Package\ModelPackage" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyToolBox\Package\Term" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToolBox" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TenpyToolBox" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TenpyToolBox/Example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Example" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -111,8 +140,18 @@
       <workItem from="1733111285772" duration="37000" />
       <workItem from="1733111329578" duration="411000" />
       <workItem from="1733111751079" duration="82000" />
-      <workItem from="1733111838505" duration="3825000" />
+      <workItem from="1733111838505" duration="5378000" />
+      <workItem from="1733278455553" duration="2233000" />
     </task>
+    <task id="LOCAL-00001" summary="Fix">
+      <option name="closed" value="true" />
+      <created>1733121986786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733121986786</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,5 +167,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ToolBox$Example.coverage" NAME="Example 覆盖结果" MODIFIED="1733121354157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TenpyToolBox" />
   </component>
 </project>

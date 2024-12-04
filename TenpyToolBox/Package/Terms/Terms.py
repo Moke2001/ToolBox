@@ -52,7 +52,8 @@ class Terms:
         type=Terms.judge_type(*args)
         term_index=self.find(*args)  # 寻找输入参数对应Term对象所在terms的序号
         self.terms[term_index]=type(*args)  # 根据输入变化做改变
-    
+
+
     #%%  BLOCK：按Term对象内容删除terms中的Term对象
     def remove(self,*args):
         term_index=self.find(*args)  # 寻找输入参数对应Term对象所在terms的序号
