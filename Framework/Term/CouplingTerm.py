@@ -1,4 +1,4 @@
-from TenpyToolBox.Package.Term.Term import Term
+from Framework.Term.Term import Term
 
 
 class CouplingTerm(Term):
@@ -11,8 +11,8 @@ class CouplingTerm(Term):
     self.op_1：第二个格点上的算符
     CouplingTerm(label,position_0,position_1,op_0,op_1,strength/[function,function_params])
     """""
-    def __init__(self, label, position_0, position_1, op_0, op_1, *args):
-        super().__init__(label, *args)
+    def __init__(self, label,effect, position_0, position_1, op_0, op_1, *args):
+        super().__init__(label,effect, *args)
         self.position_0 = position_0
         self.position_1 = position_1
         self.op_0 = op_0

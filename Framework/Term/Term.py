@@ -1,6 +1,3 @@
-import numpy as np
-
-
 class Term:
     #%%  BLOCK：构造函数
     """""
@@ -11,8 +8,9 @@ class Term:
     self.function：function对象，当作用量含时时代表随时间变化方式
     self.function_params：dict对象，当作用量含时时代表含参函数的参数
     """""
-    def __init__(self, label,*args):
+    def __init__(self, label,effect,*args):
         self.label = label
+        self.effect = effect
         if len(args)==1:
             self.time=False
             self.strength=args[0]

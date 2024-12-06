@@ -1,4 +1,4 @@
-from TenpyToolBox.Package.Term.Term import Term
+from Framework.Term.Term import Term
 
 
 class OverallMultiTerm(Term):
@@ -10,8 +10,8 @@ class OverallMultiTerm(Term):
     self.op_list：算符列表
     OverallMultiTerm(label,cell_index_list,vector_list,op_list,strength/[function,function_params])
     """""
-    def __init__(self, label, cell_index_list, vector_list, op_list, *args):
-        super().__init__(label, *args)
+    def __init__(self, label,effect, cell_index_list, vector_list, op_list, *args):
+        super().__init__(label,effect, *args)
         self.cell_index_list = cell_index_list
         self.vector_list = vector_list
         self.op_list = op_list

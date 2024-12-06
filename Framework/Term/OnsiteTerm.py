@@ -1,4 +1,4 @@
-from TenpyToolBox.Package.Term.Term import Term
+from Framework.Term.Term import Term
 
 
 class OnsiteTerm(Term):
@@ -9,8 +9,8 @@ class OnsiteTerm(Term):
     self.op：格点上的算符
     OnsiteTerm(label,position,op,strength/[function,function_params])
     """""
-    def __init__(self,label,position,op,*args):
-        super().__init__(label,*args)
+    def __init__(self,label,effect,position,op,*args):
+        super().__init__(label,effect,*args)
         self.position = position
         self.op = op
     

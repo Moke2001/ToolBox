@@ -1,4 +1,4 @@
-from TenpyToolBox.Package.Term.Term import Term
+from Framework.Term.Term import Term
 
 
 class MultiTerm(Term):
@@ -9,8 +9,8 @@ class MultiTerm(Term):
     self.op_list：格点上的算符列表
     MultiTerm(label,position_list,op_list,strength/[function,function_params])
     """""
-    def __init__(self, label, position_list, op_list, *args):
-        super().__init__(label, *args)
+    def __init__(self, label,effect, position_list, op_list, *args):
+        super().__init__(label,effect, *args)
         self.position_list = position_list
         self.op_list = op_list
     

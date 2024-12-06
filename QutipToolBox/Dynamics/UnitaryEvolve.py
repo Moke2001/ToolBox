@@ -1,17 +1,7 @@
 from qutip import *
 
 
-def unitary_evolve(model, psi, t_list, Expectation_list, Collapse_list,*args):
-    if len(args)!=0:
-        function_list=args[0]
-        operator_list=args[1]
-        parameter_list=args[2]
-        H_time=[model.H]
-        for i in range(len(function_list)):
-            H_time.append([function_list[i],operator_list[i]])
-        result_list=mesolve(H_time,psi,t_list,Collapse_list,Expectation_list,parameter_list).expect
-        psi_result=mesolve(H_time,psi,t_list,Collapse_list,parameter_list).state[-1]
-    else:
-        result_list=mesolve(model.H,psi,t_list,Collapse_list,Expectation_list).expect
-        psi_result=mesolve(model.H,psi,t_list,Collapse_list).states[-1]
+def unitary_evolve(model, psi, t_list, Expectation_list):
+    result_list=mesolve(H=model.get_H(),rho0=psi,tlist=t_list,c_ops=model.get_C(),e_ops=Expectation_list,args=model.get_function_params()).expect
+    psi_result=mesolve(H=model.get_H(),rho0=psi,tlist=t_list,c_ops=model.get_C(),args=model.get_function_params()).states[-1]
     return result_list, psi_result

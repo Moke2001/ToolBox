@@ -2,10 +2,10 @@ import numpy as np
 from tenpy import SpinHalfSite, Lattice
 from TenpyToolBox.Dynamics.EvolveTDVP import evolve_tdvp
 from TenpyToolBox.Dynamics.Measurement import measurement
-from TenpyToolBox.Package.LinearPackage.MatrixPackage import MatrixPackage
-from TenpyToolBox.Package.ModelPackage.ModelPackage import ModelPackage
-from TenpyToolBox.Package.Term.OnsiteTerm import OnsiteTerm
-from TenpyToolBox.Package.Term.OverallCouplingTerm import OverallCouplingTerm
+from TenpyToolBox.LinearPackage.MatrixPackage import MatrixPackage
+from TenpyToolBox.ModelPackage.ModelPackage import ModelPackage
+from Framework.Term.OnsiteTerm import OnsiteTerm
+from Framework.Term.OverallCouplingTerm import OverallCouplingTerm
 
 
 def example():
@@ -38,10 +38,10 @@ def example():
     }
     for i in range(L_x):
         for j in range(L_y):
-            term=OnsiteTerm('transverse field',(i,j,0),'sigmax',function,function_params)
+            term=OnsiteTerm('transverse field','hamiltonian',(i,j,0),'sigmax',function,function_params)
             model.push(term)
     strength=1
-    term=OverallCouplingTerm('interaction',0,0,[1,0],'sigmaz','sigmaz',strength)
+    term=OverallCouplingTerm('interaction','hamiltonian',0,0,[1,0],'sigmaz','sigmaz',strength)
     model.push(term)
 
     ##  TODO: 演化-------------------------------------------------------------------------------

@@ -1,10 +1,10 @@
-from TenpyToolBox.Package.Term.CouplingTerm import CouplingTerm
-from TenpyToolBox.Package.Term.MultiTerm import MultiTerm
-from TenpyToolBox.Package.Term.OnsiteTerm import OnsiteTerm
-from TenpyToolBox.Package.Term.OverallCouplingTerm import OverallCouplingTerm
-from TenpyToolBox.Package.Term.OverallMultiTerm import OverallMultiTerm
-from TenpyToolBox.Package.Term.OverallOnsiteTerm import OverallOnsiteTerm
-from TenpyToolBox.Package.Term.Term import Term
+from Framework.Term.CouplingTerm import CouplingTerm
+from Framework.Term.MultiTerm import MultiTerm
+from Framework.Term.OnsiteTerm import OnsiteTerm
+from Framework.Term.OverallCouplingTerm import OverallCouplingTerm
+from Framework.Term.OverallMultiTerm import OverallMultiTerm
+from Framework.Term.OverallOnsiteTerm import OverallOnsiteTerm
+from Framework.Term.Term import Term
 
 
 class Terms:
@@ -41,12 +41,12 @@ class Terms:
     #%%  BLOCK：按Term对象内容改变terms中的Term对象
     """
     Terms中的Term对象的基本形式：标序位符值
-    OnsiteTerm(label,position,op,strength/[function,function_params])
-    CouplingTerm(label,position_0,positon_1,op_0,op_1,strength/[function,function_params])
-    MultiTerm(label,position_list,op_list,strength/[function,function_params])
-    OverallOnsiteTerm(label,cell_index,op,strength/[function,function_params])
-    OverallCouplingTerm(label,cell_index_0,cell_index_1,vector,op_0,op_1,strength/[function,function_params])
-    OverallMultiTerm(label,cell_index_list,vector_list,op_list,strength/[function,function_params])
+    OnsiteTerm(label,effect,position,op,strength/[function,function_params])
+    CouplingTerm(label,effect,position_0,positon_1,op_0,op_1,strength/[function,function_params])
+    MultiTerm(label,effect,position_list,op_list,strength/[function,function_params])
+    OverallOnsiteTerm(label,effect,cell_index,op,strength/[function,function_params])
+    OverallCouplingTerm(label,effect,cell_index_0,cell_index_1,vector,op_0,op_1,strength/[function,function_params])
+    OverallMultiTerm(label,effect,cell_index_list,vector_list,op_list,strength/[function,function_params])
     """
     def change(self,*args):
         type=Terms.judge_type(*args)
@@ -85,20 +85,20 @@ class Terms:
     @staticmethod
     def judge_type(*args):
         ##  OnsiteTerm
-        if isinstance(args[1],tuple) and isinstance(args[2],str):
+        if isinstance(args[2],tuple) and isinstance(args[3],str):
             return OnsiteTerm
         ##  CouplingTerm
-        elif isinstance(args[1],tuple) and isinstance(args[2],tuple):
+        elif isinstance(args[2],tuple) and isinstance(args[3],tuple):
             return CouplingTerm
         ##  OverallOnsiteTerm
-        elif isinstance(args[1],int) and isinstance(args[2],str):
+        elif isinstance(args[2],int) and isinstance(args[3],str):
             return OverallOnsiteTerm
         ##  OverallCouplingTerm
-        elif isinstance(args[1],int) and isinstance(args[2],int):
+        elif isinstance(args[2],int) and isinstance(args[3],int):
             return OverallCouplingTerm
-        elif isinstance(args[1],list) and isinstance(args[2],list):
+        elif isinstance(args[2],list) and isinstance(args[3],list):
             ##  OverallMultiTerm
-            if isinstance(args[1][0],tuple):
+            if isinstance(args[2][0],tuple):
                 return MultiTerm
             ##  MultiTerm
             else:

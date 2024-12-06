@@ -1,7 +1,7 @@
 import random
 import numpy as np
 from tenpy import MPS
-from TenpyToolBox.Package.ModelPackage.ModelPackage import ModelPackage
+from TenpyToolBox.ModelPackage.ModelPackage import ModelPackage
 
 
 #%%  BLOCK：测量下随机坍缩

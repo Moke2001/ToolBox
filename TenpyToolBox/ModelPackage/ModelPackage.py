@@ -1,7 +1,7 @@
 from tenpy import Lattice, MPS
 from tenpy.models import CouplingMPOModel
-from TenpyToolBox.Package.ModelPackage.ModelCreator import ModelCreator
-from TenpyToolBox.Package.Terms.Terms import Terms
+from TenpyToolBox.ModelPackage.ModelCreator import ModelCreator
+from Framework.Term.Terms import Terms
 
 
 class ModelPackage(Terms):

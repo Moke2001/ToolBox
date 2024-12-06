@@ -1,6 +1,6 @@
 from tenpy import MPS
 from tenpy.algorithms import tdvp
-from TenpyToolBox.Package.ModelPackage.ModelPackage import ModelPackage
+from TenpyToolBox.ModelPackage.ModelPackage import ModelPackage
 
 
 #%%  BLOCK：执行TDVP算法计算演化后的态矢
