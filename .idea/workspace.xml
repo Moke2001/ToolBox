@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="Tenpy和Qutip使用工具，在Format结构下利用多态特点可以将一个问题在两种软件下求解，不需要为两种算法单独写代码，减小了代码冗余，为量子系统数值模拟格式化提供了一个有益尝试。">
-      <change afterPath="$PROJECT_DIR$/Example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Format/AlgorithmFormat/EnergySpectrumSolverFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/AlgorithmFormat/EnergySpectrumSolverFormat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Format/AlgorithmFormat/EvolutionSolverFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/AlgorithmFormat/EvolutionSolverFormat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Format/AlgorithmFormat/GroundStateSolverFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/AlgorithmFormat/GroundStateSolverFormat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Format/LatticeFormat/LatticeFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/LatticeFormat/LatticeFormat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Format/ModelFormat/ModelFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/ModelFormat/ModelFormat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Format/SiteFormat/SiteFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/SiteFormat/SiteFormat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Format/SiteFormat/SpinHalfSiteFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/SiteFormat/SpinHalfSiteFormat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/AlgorithmQutip/EnergySpectrumSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/QutipBox/AlgorithmQutip/EnergySpectrumSolverQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/AlgorithmQutip/EvolutionSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/QutipBox/AlgorithmQutip/EvolutionSolverQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/AlgorithmQutip/GroundStateSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/QutipBox/AlgorithmQutip/GroundStateSolverQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/AlgorithmQutip/MeasurementSimulatorQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/QutipBox/AlgorithmQutip/MeasurementSimulatorQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/LatticeQutip/LatticeQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/QutipBox/LatticeQutip/LatticeQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/ModelQutip/ModelQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/QutipBox/ModelQutip/ModelQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/SiteQutip/SiteQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/QutipBox/SiteQutip/SiteQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/SiteQutip/SpinHalfSiteQutip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QutipBox/StateQutip/StateQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/QutipBox/StateQutip/StateQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/AlgorithmTenpy/EnergySpectrumSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/AlgorithmTenpy/EnergySpectrumSolverTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/AlgorithmTenpy/EvolutionSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/AlgorithmTenpy/EvolutionSolverTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/AlgorithmTenpy/GroundStateSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/AlgorithmTenpy/GroundStateSolverTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/AlgorithmTenpy/MeasurementSimulatorTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/AlgorithmTenpy/MeasurementSimulatorTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/LatticeTenpy/LatticeTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/LatticeTenpy/LatticeTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/ModelTenpy/ModelCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/ModelTenpy/ModelCreator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/ModelTenpy/ModelTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/ModelTenpy/ModelTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/SiteTenpy/SiteTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/SiteTenpy/SiteTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/SiteTenpy/SpinHalfSiteTenpy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TenpyBox/StateTenpy/StateTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/TenpyBox/StateTenpy/StateTenpy.py" afterDir="false" />
-    </list>
+    <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="Tenpy和Qutip使用工具，在Format结构下利用多态特点可以将一个问题在两种软件下求解，不需要为两种算法单独写代码，减小了代码冗余，为量子系统数值模拟格式化提供了一个有益尝试。" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -323,7 +294,7 @@
       <workItem from="1733638560542" duration="21954000" />
       <workItem from="1733724542171" duration="381000" />
       <workItem from="1733728359934" duration="6009000" />
-      <workItem from="1733743416184" duration="7428000" />
+      <workItem from="1733743416184" duration="7526000" />
     </task>
     <task id="LOCAL-00001" summary="Fix">
       <option name="closed" value="true" />
@@ -365,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733724148499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tenpy和Qutip使用工具，在Format结构下利用多态特点可以将一个问题在两种软件下求解，不需要为两种算法单独写代码，减小了代码冗余，为量子系统数值模拟格式化提供了一个有益尝试。">
+      <option name="closed" value="true" />
+      <created>1733750945364</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733750945364</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
