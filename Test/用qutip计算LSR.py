@@ -180,6 +180,6 @@ def main(J_2,N):
 
 
 if __name__ == '__main__':
-    main(0.1,10)
+    main(0.5,10)
 
 
