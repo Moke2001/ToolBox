@@ -3,6 +3,9 @@ from abc import abstractmethod
 
 import numpy as np
 
+from Format.ModelFormat.ModelFormat import ModelFormat
+from TenpyBox.ModelTenpy.ModelTenpy import ModelTenpy
+
 
 class MeasurementSimulatorTenpy:
     def __init__(self, model, psi_initial, projector_list, eigenvalue_list):
@@ -25,3 +28,11 @@ class MeasurementSimulatorTenpy:
 
     def get_result(self):
         return self.value,self.psi_final
+
+    def build(self):
+        if isinstance(self.model,ModelFormat):
+            self.model=ModelTenpy(self.model)
+        elif isinstance(self.model,ModelTenpy):
+            pass
+        else:
+            raise TypeError

@@ -13,3 +13,4 @@ class GroundStateSolverFormat:
 
     def get_result(self):
         return self.groundenergy, self.groundstate
+

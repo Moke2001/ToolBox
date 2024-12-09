@@ -1,7 +1,8 @@
 from abc import abstractmethod
-
 import numpy as np
 from tenpy.algorithms import dmrg
+from Format.ModelFormat.ModelFormat import ModelFormat
+from TenpyBox.ModelTenpy.ModelTenpy import ModelTenpy
 
 
 class GroundStateSolverTenpy:
@@ -9,6 +10,7 @@ class GroundStateSolverTenpy:
         self.model = model
         self.groundstate=None
         self.groundenergy=None
+
 
     @abstractmethod
     def compute(self,chi_max):
@@ -27,6 +29,14 @@ class GroundStateSolverTenpy:
         }
         info = dmrg.run(psi, self.model.get_model(), dmrg_params)  # the main work...
         return info['E'], psi
+
+    def build(self):
+        if isinstance(self.model,ModelFormat):
+            self.model=ModelTenpy(self.model)
+        elif isinstance(self.model,ModelTenpy):
+            pass
+        else:
+            raise TypeError
 
     def get_result(self):
         return self.groundenergy, self.groundstate

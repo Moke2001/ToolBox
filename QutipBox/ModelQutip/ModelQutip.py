@@ -10,21 +10,45 @@ from QutipBox.LatticeQutip.LatticeQutip import LatticeQutip
 
 
 class ModelQutip(ModelFormat,LatticeQutip):
-    def __init__(self):
+    # %%  BLOCK：构造函数
+    """""
+    Qutip数据类：模型对象，定义哈密顿量，多重继承
+    self.H：数据类属性，qutip算符形式的静态哈密顿量
+    self.H_list：数据类属性，qutip算符形式列表的哈密顿量列表
+    self.C_list：数据类属性，qutip算符形式列表的Lindblad算符列表
+    self.N_list：数据类属性，qutip算符形式列表的噪声算符列表
+    self.function_params：数据类属性，含时算符的函数参数列表
+    self.site_array：数据类属性，qutip格点对象张量
+    self.terms：格式类属性，list of Term对象，储存模型的作用量
+    self.number：格式类属性，int对象，储存作用量个数
+    self.cell_period_list：格式类属性，元胞延展次数，形如[1,2,3]
+    self.cell_vector_list：格式类属性，每个方向上的元胞基矢，形如[np.array,np.array]
+    self.inner_site_list：格式类属性，元胞内Site对象列表，形如[Site,Site]
+    self.inner_coordiante：格式类属性，元胞内格点位移，形如[np.array,np.array]，与cell_sites对应
+    self.cell_number：格式类属性，元胞个数
+    self.space_dimension：格式类属性，空间维度数目
+    self.site_number_in_one_cell：格式类属性，元胞中格点个数
+    """""
+    def __init__(self,model_format):
         ModelFormat.__init__(self)
-        LatticeQutip.__init__(self)
+        LatticeQutip.__init__(self,model_format)
+        self.terms=model_format.terms.copy()
+        self.number=model_format.number
         self.H = None
         self.H_list = []
         self.C_list = []
         self.N_list = []
         self.function_params = {}
 
+
+    #%%  BLOCK：构造数据类属性
     def build(self):
-        LatticeQutip.build(self)
+        LatticeQutip.build_lattice(self)
         ##  遍历作用量列表
         self.H = 0
         self.H_list = []
         self.C_list = []
+        self.N_list = []
         for term_temp in self.terms:
 
             ##  单局域作用量
@@ -95,5 +119,8 @@ class ModelQutip(ModelFormat,LatticeQutip):
         ##  将静态哈密顿量添加到列表中
         self.H_list = [self.H] + self.H_list
 
+
+    #%%  BLOCK：返回用于计算的模型对象
     def get_model(self):
+        self.build()
         return self.H_list,self.C_list,self.N_list,self.function_params

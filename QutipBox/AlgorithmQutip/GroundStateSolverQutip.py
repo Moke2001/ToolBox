@@ -1,5 +1,8 @@
 from abc import abstractmethod
 
+from Format.ModelFormat.ModelFormat import ModelFormat
+from QutipBox.ModelQutip.ModelQutip import ModelQutip
+
 
 class GroundStateSolverQutip:
     def __init__(self, model):
@@ -16,3 +19,12 @@ class GroundStateSolverQutip:
 
     def get_result(self):
         return self.groundenergy, self.groundstate
+
+
+    def build(self):
+        if isinstance(self.model,ModelFormat):
+            self.model=ModelQutip(self.model)
+        elif isinstance(self.model,ModelQutip):
+            pass
+        else:
+            raise TypeError

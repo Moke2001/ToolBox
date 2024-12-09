@@ -1,4 +1,5 @@
 import numpy as np
+from qutip import basis, tensor
 from Format.TermFormat.CouplingTermFormat import CouplingTermFormat
 from Format.TermFormat.MultiTermFormat import MultiTermFormat
 from Format.TermFormat.OnsiteTermFormat import OnsiteTermFormat
@@ -16,7 +17,6 @@ class StateQutip:
             self.data=self.data/self.data.norm()
         else:
             self.data = StateQutip.get_operator_qutip(term, model) * self.data
-
 
     def expectation(self,term,model):
         op=StateQutip.get_operator_qutip(term,model)
@@ -70,3 +70,17 @@ class StateQutip:
 
     def copy(self):
         return StateQutip(self.data.copy())
+
+
+    @staticmethod
+    def get_product_state(model,state_array):
+        assert isinstance(model, ModelQutip),'model必须是ModelQutip对象'
+        model.build_lattice()
+        assert state_array.shape == model.site_array.shape
+        state = None
+        for site_index, state_temp in np.ndenumerate(state_array):
+            if state is None:
+                state = basis(model.site_array[site_index].get_dimension(), state_temp)
+            else:
+                state = tensor(state, basis(model.site_array[site_index].get_dimension(), state_temp))
+        return StateQutip(state)

@@ -8,6 +8,7 @@ class ModelFormat(LatticeFormat,TermsFormat):
         LatticeFormat.__init__(self)
         TermsFormat.__init__(self)
 
+
     @abstractmethod
     def build(self):
         pass
@@ -15,4 +16,3 @@ class ModelFormat(LatticeFormat,TermsFormat):
     @abstractmethod
     def get_model(self):
         pass
-

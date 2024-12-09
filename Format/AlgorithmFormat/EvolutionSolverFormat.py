@@ -17,3 +17,4 @@ class EvolutionSolverFormat:
 
     def get_result(self):
         return self.data_list,self.psi_final
+

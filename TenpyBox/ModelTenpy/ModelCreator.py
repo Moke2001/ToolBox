@@ -1,6 +1,5 @@
 from tenpy import Lattice
 from tenpy.models import CouplingMPOModel
-
 from Format.TermFormat.CouplingTermFormat import CouplingTermFormat
 from Format.TermFormat.MultiTermFormat import MultiTermFormat
 from Format.TermFormat.OnsiteTermFormat import OnsiteTermFormat
@@ -23,7 +22,7 @@ class ModelCreator(CouplingMPOModel):
         ##  执行作用量添加
         for i in range(term_list.number):
             term_temp=term_list.get_term(i)  # 获取当前作用量
-            if term_temp=='hamiltonian':
+            if term_temp.effect=='hamiltonian':
                 ##  单局域作用量
                 if isinstance(term_temp,OnsiteTermFormat):
                     mps_index=lattice.lat2mps_idx(term_temp.get_position())

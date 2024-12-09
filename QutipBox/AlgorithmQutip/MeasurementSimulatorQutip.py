@@ -1,6 +1,9 @@
 import random
 from abc import abstractmethod
 
+from Format.ModelFormat.ModelFormat import ModelFormat
+from QutipBox.ModelQutip.ModelQutip import ModelQutip
+
 
 class MeasurementSimulatorQutip:
     def __init__(self, model, psi_initial, projector_list, eigenvalue_list):
@@ -24,3 +27,12 @@ class MeasurementSimulatorQutip:
 
     def get_result(self):
         return self.value,self.psi_final
+
+
+    def build(self):
+        if isinstance(self.model,ModelFormat):
+            self.model=ModelQutip(self.model)
+        elif isinstance(self.model,ModelQutip):
+            pass
+        else:
+            raise TypeError

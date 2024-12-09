@@ -6,14 +6,13 @@ import numpy as np
 class LatticeFormat:
     # %%  BLOCK：构造函数
     """""
-    self.L_list：元胞延展次数，形如[1,2,3]
+    self.cell_period_list：元胞延展次数，形如[1,2,3]
     self.cell_vector_list：每个方向上的元胞基矢，形如[np.array,np.array]
     self.inner_site_list：元胞内Site对象列表，形如[Site,Site]
     self.inner_coordiante：元胞内格点位移，形如[np.array,np.array]，与cell_sites对应
     self.cell_number：元胞个数
     self.space_dimension：空间维度数目
     self.site_number_in_one_cell：元胞中格点个数
-    self.sites：系统格点数组
     """""
     def __init__(self):
         ##  参数赋值
@@ -48,7 +47,7 @@ class LatticeFormat:
 
     #%%  BLOCK：构造晶格对象
     @ abstractmethod
-    def build(self):
+    def build_lattice(self):
         pass
 
 
@@ -60,22 +59,23 @@ class LatticeFormat:
         result = result + self.inner_coordinate_list[inner_index]
         return result
 
-    #%%  BLOCK：获得结构
+
+    #%%  BLOCK：获得晶格结构数组
     def get_structure(self,type):
         return np.array(tuple(self.cell_period_list+[self.site_number_in_one_cell]),dtype=type)
 
 
-    #%%  BLOCK：获得格点数目
+    #%%  BLOCK：获得总格点数目
     def get_site_number(self):
         return self.site_number
 
 
-    #%%  BLOCK：返回一个元胞格点数目
+    #%%  BLOCK：返回一个元胞内格点的数目
     def get_site_number_in_one_cell(self):
         return self.site_number_in_one_cell
 
 
-    # %%  BLOCK：求Site间的距离
+    # %%  BLOCK：求两个Site间的距离
     def get_distance(self, cell_index_tuple_0,inner_index_0,cell_index_tuple_1,inner_index_1):
         position_0 = self.get_position(cell_index_tuple_0,inner_index_0)
         position_1 = self.get_position(cell_index_tuple_1,inner_index_1)
@@ -88,13 +88,7 @@ class LatticeFormat:
         pass
 
 
-    #%%  BLOCK：返回直积态
-    @abstractmethod
-    def get_product_state(self,state_array):
-        pass
-
-
-    #%%  BLOCK：返回晶格
+    #%%  BLOCK：返回晶格对象
     @abstractmethod
     def get_lattice(self):
         pass

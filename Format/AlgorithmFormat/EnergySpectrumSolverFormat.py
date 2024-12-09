@@ -1,6 +1,7 @@
 from abc import abstractmethod
 
 
+
 class EnergySpectrumSolverFormat():
     def __init__(self, model):
         self.model = model
@@ -13,3 +14,5 @@ class EnergySpectrumSolverFormat():
 
     def get_result(self):
         return self.eigenenergies, self.eigenstates
+
+
