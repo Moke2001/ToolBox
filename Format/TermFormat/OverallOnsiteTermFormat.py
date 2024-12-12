@@ -1,3 +1,5 @@
+import copy
+
 from Format.TermFormat.TermFormat import TermFormat
 
 
@@ -11,14 +13,14 @@ class OverallOnsiteTermFormat(TermFormat):
     """""
     def __init__(self, label,effect, cell_index,op, *args):
         super().__init__(label,effect, *args)
-        self.cell_index = cell_index
+        self.inner_index = cell_index
         self.op = op
     
     
     #%%  BLOCK：判断参数是否对应CouplingTerm
     def fit(self, label,*args):
         if super().fit(label):
-            if self.cell_index == args[0]:
+            if self.inner_index == args[0]:
                 return True
         return False
     
@@ -29,8 +31,8 @@ class OverallOnsiteTermFormat(TermFormat):
     
     
     #%%  BLOCK：获取位置对象
-    def get_unit(self):
-        return self.cell_index
+    def get_position(self):
+        return self.inner_index
     
     
     # %%  BLOCK：更改算符形式
@@ -41,7 +43,4 @@ class OverallOnsiteTermFormat(TermFormat):
     
     # %%  BLOCK：复制函数
     def copy(self):
-        if self.time:
-            return OverallOnsiteTerm(self.label, self.cell_index, self.op, self.function, self.function_params)
-        else:
-            return OverallOnsiteTerm(self.label, self.cell_index, self.op, self.strength)
+        return copy.deepcopy(self)

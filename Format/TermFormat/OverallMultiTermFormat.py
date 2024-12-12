@@ -1,3 +1,5 @@
+import copy
+
 from Format.TermFormat.TermFormat import TermFormat
 
 
@@ -43,9 +45,4 @@ class OverallMultiTermFormat(TermFormat):
 
     # %%  BLOCK：复制函数
     def copy(self):
-        if self.time:
-            return OverallMultiTerm(self.label, self.cell_index_list, self.vector_list, self.op_list, self.function,
-                self.function_params)
-        else:
-            return OverallMultiTerm(self.label, self.cell_index_list, self.vector_list, self.op_list, self.function,
-                self.strength)
+        return copy.deepcopy(self)

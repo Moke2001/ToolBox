@@ -1,0 +1,19 @@
+from State.StatePreparer.StatePreparer import state_preparer
+from Format.ModelFormat.ModelFormat import ModelFormat
+from Format.TermFormat.TermFormat import TermFormat
+from Format.TermFormat.TermsFormat import TermsFormat
+from Algorithm.Interface.InterfaceTenpy.GetOperatorTenpy import get_operator_tenpy
+
+
+#%%  KEY：基于tenpy的期望值计算
+def expectation_tenpy(model_format,state,term):
+    ##  SECTION：标准化-----------------------------------------------------------------------------
+    assert isinstance(term, TermFormat) or isinstance(term, TermsFormat), '参数term必须是TermFormat或TermsFormat对象'
+    assert isinstance(model_format, ModelFormat), '参数model_origin必须是ModelFormat对象'
+    psi=state_preparer(model_format,state,'tenpy')
+
+    ##  SECTION：基于tenpy计算----------------------------------------------------------------------
+    if psi.mps:
+        return get_operator_tenpy(model_format,term).expectation_value(psi.mps)
+    else:
+        raise ValueError('态矢没有初始化')
