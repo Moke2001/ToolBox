@@ -4,7 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="Tenpy和Qutip使用工具，在Format结构下利用多态特点可以将一个问题在两种软件下求解，不需要为两种算法单独写代码，减小了代码冗余，为量子系统数值模拟格式化提供了一个有益尝试。" />
+    <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="修订">
+      <change afterPath="$PROJECT_DIR$/Data/StateMPSTools/StateMPS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/StateTools/Stack2MPS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/StateTools/Stack2Vector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/StateVectorTools/Call2Qobj.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/StateVectorTools/Term2Qobj.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/StateVectorTools/VectorApply.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/StateVectorTools/VectorOverlap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Framework/ModelPreparer/ModelBuilder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Framework/ModelPreparer/ModelPreparer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Framework/ModelPreparer/ModelTranslator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationX/总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationX/计算.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationZ/总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationZ/脚本.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/EnergySpectrumSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/EnergySpectrumSolverQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/EvolutionSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/EvolutionSolverQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/GroundStateSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/GroundStateSolverQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/MeasurementSimulatorQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/MeasurementSimulatorQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/EnergySpectrumSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/EnergySpectrumSolverTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/EvolutionSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/EvolutionSolverTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/GroundStateSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/GroundStateSolverTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/MeasurementSimulatorTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/MeasurementSimulatorTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/State/LocalState.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/LocalState/LocalState.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/State/State.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/State/State.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/State/StateMPS.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/State/StateVector.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/StateVectorTools/VectorExpectation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/TermTranslator/TermTranslator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Format/LatticeFormat/LatticeFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Format/LatticeFormat/LatticeFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Format/ModelFormat/ModelFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Format/ModelFormat/ModelFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Format/TermFormat/OverallCouplingTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Format/TermFormat/OverallCouplingTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Format/TermFormat/OverallMultiTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Format/TermFormat/OverallMultiTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Format/TermFormat/OverallOnsiteTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Format/TermFormat/OverallOnsiteTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/QutipBox/LatticeQutip/LatticeQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/QutipBox/LatticeQutip/LatticeQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/QutipBox/ModelQutip/ModelQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/QutipBox/ModelQutip/ModelQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/TenpyBox/ModelTenpy/ModelCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/TenpyBox/ModelTenpy/ModelCreator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/TenpyBox/ModelTenpy/ModelTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/TenpyBox/ModelTenpy/ModelTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/TenpyBox/SiteTenpy/SiteTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/TenpyBox/SiteTenpy/SiteTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SSH模型中的多体局域化/脚本.py" beforeDir="false" afterPath="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationX/脚本.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +54,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -53,31 +95,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Example (1).executor": "Run",
-    "Python.Example.executor": "Run",
-    "Python.用qutip计算LSR.executor": "Run",
-    "Python.精确对角化计算LSR.executor": "Run",
-    "Python.计算LSR.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/moke_/Desktop/Cloud/ToolBox/QutipBox",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Example (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Example.executor&quot;: &quot;Run&quot;,
+    &quot;Python.用qutip计算LSR.executor&quot;: &quot;Run&quot;,
+    &quot;Python.精确对角化计算LSR.executor&quot;: &quot;Run&quot;,
+    &quot;Python.脚本.executor&quot;: &quot;Run&quot;,
+    &quot;Python.计算LSR.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moke_/Desktop/Cloud/ToolBox/SSH模型中的多体局域化&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="ToolBox" branch="master" />
@@ -85,22 +128,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\SSH模型中的多体局域化" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmTenpy" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmSolver" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmQutip" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\QutipBox" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyBox\AlgorithmTenpy" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyBox" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\QutipVersion\SiteLattice" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Format\SiteFormat" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyBox\StateTenpy" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\QutipBox\StateQutip" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyBox" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\QutipBox" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\TenpyBox\SiteTenpy" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Data" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Data\State\LocalState" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Data\State\StateVectorTools" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Data\State\StateMPSTools" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Example" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Example (1)">
-    <configuration name="Example (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.脚本">
+    <configuration name="脚本" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,12 +153,12 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.10 (Simulator)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SSH模型中的多体局域化" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\moke_\Desktop\Cloud\ToolBox\SSH模型中的多体局域化\端点局域性\脚本.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,6 +183,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QutipToolBox/Example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToolBox" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10 (Simulator)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\moke_\Desktop\Cloud\ToolBox\Example\Example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -232,7 +299,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/用qutip计算LSR.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\moke_\Desktop\Cloud\ToolBox\用qutip计算LSR.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,14 +309,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Example (1)" />
+      <item itemvalue="Python.脚本" />
       <item itemvalue="Python.Example" />
       <item itemvalue="Python.用qutip计算LSR" />
       <item itemvalue="Python.计算LSR" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Example (1)" />
+        <item itemvalue="Python.脚本" />
         <item itemvalue="Python.用qutip计算LSR" />
         <item itemvalue="Python.Example" />
         <item itemvalue="Python.计算LSR" />
@@ -295,6 +362,17 @@
       <workItem from="1733724542171" duration="381000" />
       <workItem from="1733728359934" duration="6009000" />
       <workItem from="1733743416184" duration="7526000" />
+      <workItem from="1733751016030" duration="141000" />
+      <workItem from="1733751169484" duration="343000" />
+      <workItem from="1733896678458" duration="3877000" />
+      <workItem from="1733903924714" duration="1112000" />
+      <workItem from="1733919090252" duration="29854000" />
+      <workItem from="1734052856686" duration="10007000" />
+      <workItem from="1734067690167" duration="3303000" />
+      <workItem from="1734071230823" duration="9160000" />
+      <workItem from="1734253256224" duration="5833000" />
+      <workItem from="1734264187982" duration="13747000" />
+      <workItem from="1734327367791" duration="4241000" />
     </task>
     <task id="LOCAL-00001" summary="Fix">
       <option name="closed" value="true" />
@@ -344,7 +422,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733750945364</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tenpy和Qutip使用工具，在Format结构下利用多态特点可以将一个问题在两种软件下求解，不需要为两种算法单独写代码，减小了代码冗余，为量子系统数值模拟格式化提供了一个有益尝试。">
+      <option name="closed" value="true" />
+      <created>1733751032819</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733751032819</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修订">
+      <option name="closed" value="true" />
+      <created>1734011986329</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734011986329</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +459,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Tenpy和Qutip使用工具，在Format结构下利用多态特点可以将一个问题在两种软件下求解，不需要为两种算法单独写代码，减小了代码冗余，为量子系统数值模拟格式化提供了一个有益尝试。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tenpy和Qutip使用工具，在Format结构下利用多态特点可以将一个问题在两种软件下求解，不需要为两种算法单独写代码，减小了代码冗余，为量子系统数值模拟格式化提供了一个有益尝试。" />
+    <MESSAGE value="修订" />
+    <option name="LAST_COMMIT_MESSAGE" value="修订" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -376,7 +471,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/QutipBox/AlgorithmQutip/EvolutionSolverQutip.py</url>
+          <url>file://$PROJECT_DIR$/Framework/QutipBox/AlgorithmQutip/EvolutionSolverQutip.py</url>
           <line>19</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -384,7 +479,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ToolBox$Example__1_.coverage" NAME="Example (1) 覆盖结果" MODIFIED="1733750783167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ToolBox$.coverage" NAME="脚本 覆盖结果" MODIFIED="1734068574833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SSH模型中的多体局域化" />
+    <SUITE FILE_PATH="coverage/ToolBox$Example__1_.coverage" NAME="Example (1) 覆盖结果" MODIFIED="1734007056125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ToolBox$LSR.coverage" NAME="计算LSR 覆盖结果" MODIFIED="1733369631273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/ToolBox$Example.coverage" NAME="Example 覆盖结果" MODIFIED="1733479939407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QutipToolBox" />
     <SUITE FILE_PATH="coverage/ToolBox$qutipLSR.coverage" NAME="用qutip计算LSR 覆盖结果" MODIFIED="1733638733094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
