@@ -1,7 +1,7 @@
 import copy
 import numpy as np
-from tenpy import Array, LegCharge, MPS
-import Algorithm.Interface.InterfaceTenpy.GetLatticeTenpy
+from tenpy import Array,MPS
+from Algorithm.Interface.InterfaceTenpy.GetLatticeTenpy import *
 from State.StateNumpy.StateNumpy import StateNumpy
 from Format.ModelFormat.ModelFormat import ModelFormat
 
@@ -16,16 +16,16 @@ class StateTenpy:
 
         ##  SECTION：标准构造函数-------------------------------------------------------------------
         elif len(args) == 2 and isinstance(args[0], StateNumpy) and isinstance(args[1], ModelFormat):
-            leg_list=[]
-            label_list=[]
-            flag=0
+            lattice=get_lattice_tenpy(args[1])
+            site_number=args[1].get_site_number()
+            leg_list=[None]*site_number
+            label_list=['none']*site_number
             for index_temp,ignore in np.ndenumerate(args[1].get_dimension_array()):
-                site_temp=args[1].get_site(index_temp)
-                leg_list.append(LegCharge.from_trivial(site_temp.get_dimension()))
-                label_list.append('p'+str(flag))
-                flag=flag+1
-            temp=Array.from_ndarray(args[0].tensor,leg_list,labels=label_list)
-            self.mps=MPS.from_full(Algorithm.Interface.InterfaceTenpy.GetLatticeTenpy.get_lattice_tenpy(args[1]).mps_sites(),temp)
+                mps_index=lattice.lat2mps_idx(index_temp)
+                leg_list[mps_index]=LegCharge.from_trivial(args[1].get_site_dimension(index_temp))
+                label_list[mps_index]='p'+str(mps_index)
+            temp=Array.from_ndarray(args[0].tensor,legcharges=leg_list,labels=label_list)
+            self.mps=MPS.from_full(lattice.mps_sites(),temp)
             self.dimension_array=args[1].get_dimension_array()
 
         ##  SECTION：标准构造函数-------------------------------------------------------------------

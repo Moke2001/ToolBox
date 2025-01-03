@@ -31,6 +31,8 @@ def get_model_tenpy(model_format)->tuple[CouplingMPOModel,list,list]:
             N_list.append(get_operator_tenpy(model_format, term))
         elif term.effect=='lindblad':
             C_list.append(get_operator_tenpy(model_format, term))
+        elif term.effect=='hamiltonian':
+            pass
         else:
             raise TypeError('不支持的作用量类型')
 

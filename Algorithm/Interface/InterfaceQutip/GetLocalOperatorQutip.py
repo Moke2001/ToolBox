@@ -23,14 +23,14 @@ def get_local_operator_qutip(model_format,index_tuple, name)->Qobj:
         ##  第一个位点
         if qobj is None:
             if index_tuple_temp==index_tuple:
-                qobj=Qobj(model_format.get_site(index_tuple_temp).get_operator_dictionary()[name])
+                qobj=Qobj(model_format.get_site_operator_numpy(index_tuple,name))
             else:
                 qobj=identity(dimension_temp)
 
         ##  其他位点
         else:
             if index_tuple_temp==index_tuple:
-                qobj=tensor(qobj,Qobj(model_format.get_site(index_tuple_temp).get_operator_dictionary()[name]))
+                qobj=tensor(qobj,Qobj(model_format.get_site_operator_numpy(index_tuple,name)))
             else:
                 qobj = tensor(qobj, identity(dimension_temp))
 

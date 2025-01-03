@@ -10,17 +10,17 @@ from Format.TermFormat.OnsiteTermFormat import OnsiteTermFormat
 from Format.TermFormat.OverallOnsiteTermFormat import OverallOnsiteTermFormat
 
 
-#%%  TODO：定义时变函数
+#%%  USER：定义时变函数
 def zeeman(t,args):
     g_max=args.get('g_max')
     omega=args.get('omega')
     return np.sin(omega*t)*g_max
 
 
-#%%  TODO：主函数
+#%%  USER：主函数
 def example():
     ##  SECTION：定义格点---------------------------------------------------------------------------
-    site_format=SiteFormat.SpinHalfSiteFormat(None)
+    site_format=SiteFormat.SpinHalfSiteFormat()
 
     ##  SECTION：定义晶格---------------------------------------------------------------------------
     cell_period_list=[5]
@@ -28,11 +28,11 @@ def example():
     inner_site_list=[site_format]
     inner_coordinate_list=[np.array([0])]
 
-    ##  SECTION：定义模型并更新晶格
+    ##  SECTION：定义模型并更新晶格-----------------------------------------------------------------
     model=ModelFormat()
     model.update_lattice(cell_period_list,cell_vector_list,inner_site_list,inner_coordinate_list)
 
-    ##  SECTION：定义哈密顿量
+    ##  SECTION：定义哈密顿量-----------------------------------------------------------------------
     ##  含时哈密顿量项
     function_params={
         'g_max':0.5,
@@ -54,12 +54,12 @@ def example():
     ##  SECTION：定义可观测量-----------------------------------------------------------------------
     expectation_terms = []
     for i in range(5):
-        term=OnsiteTermFormat('observe','hamiltonian',(i,0),'sigmaz',1)
+        term=OnsiteTermFormat('observe','observe',(i,0),'sigmaz',1)
         expectation_terms.append(term)
 
     ##  SECTION：定义模拟---------------------------------------------------------------------------
     t_list=np.linspace(0,1,20)
-    psi_result,data_list=AlgorithmSolver.EvolutionSolver(model,state,expectation_terms,t_list,'qutip')
+    psi_result,data_list=AlgorithmSolver.EvolutionSolver(model,state,expectation_terms,t_list,'tenpy')
 
     ##  SECTION：输出结果---------------------------------------------------------------------------
     plt.plot(t_list,data_list[1])

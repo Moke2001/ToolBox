@@ -1,6 +1,4 @@
-from abc import abstractmethod
 import numpy as np
-from Format.SiteFormat.SiteFormat import SiteFormat
 
 
 class LatticeFormat:
@@ -16,26 +14,24 @@ class LatticeFormat:
     self.site_number_in_one_cell：元胞中格点个数
     """""
     def __init__(self,*args):
-        ##  SECTION：空构造函数-----------------------------------------------------------
+        ##  SECTION：空构造函数---------------------------------------------------------------------
         if len(args) == 0:
             self.cell_period_list = None  # 元胞在各个方向上的延展次数
             self.cell_vector_list = None  # 晶格元胞基矢
             self.inner_site_list = None  # 晶格元胞内格点类型列表
             self.inner_coordinate_list= None  # 晶格元胞内格点相对坐标
+            self.periodicity=False
 
-        ##  SECTION：复制构造函数---------------------------------------------------------
+        ##  SECTION：复制构造函数-------------------------------------------------------------------
         elif len(args) == 1 and isinstance(args[0], LatticeFormat):
             ##  基础定义量
-            cell_period_list=args[0].get_cell_period_list()
-            cell_vector_list=args[0].get_cell_vector_list()
-            inner_site_list=args[0].get_inner_site_list()
-            inner_coordinate_list=args[0].get_inner_coordinate_list()
-            self.cell_period_list = cell_period_list.copy()  # 元胞在各个方向上的延展次数
-            self.cell_vector_list = cell_vector_list.copy()  # 晶格元胞基矢
-            self.inner_site_list = inner_site_list.copy()  # 晶格元胞内格点类型列表
-            self.inner_coordinate_list = inner_coordinate_list.copy()  # 晶格元胞内格点相对坐标
+            self.cell_period_list = args[0].get_cell_period_list().copy()  # 元胞在各个方向上的延展次数
+            self.cell_vector_list = args[0].get_cell_vector_list().copy()  # 晶格元胞基矢
+            self.inner_site_list = args[0].get_inner_site_list().copy()  # 晶格元胞内格点类型列表
+            self.inner_coordinate_list = args[0].get_inner_coordinate_list().copy()  # 晶格元胞内格点相对坐标
+            self.periodicity = args[0].get_periodicity()  # 晶格周期性
 
-        ##  SECTION：标准构造函数---------------------------------------------------------
+        ##  SECTION：标准构造函数-------------------------------------------------------------------
         elif len(args) == 4:
             ##  标准化
             cell_period_list=args[0]
@@ -52,7 +48,28 @@ class LatticeFormat:
             self.cell_vector_list = cell_vector_list
             self.inner_site_list = inner_site_list
             self.inner_coordinate_list = inner_coordinate_list
+            self.periodicity = False
 
+        ##  SECTION：标准构造函数2------------------------------------------------------------------
+        elif len(args) == 5:
+            ##  标准化
+            cell_period_list=args[0]
+            cell_vector_list=args[1]
+            inner_site_list=args[2]
+            inner_coordinate_list=args[3]
+            periodicity=args[4]
+            assert len(cell_period_list) == len(cell_vector_list)
+            assert len(inner_site_list) == len(inner_coordinate_list)
+            assert all(it.shape[0] == len(cell_vector_list) for it in cell_vector_list)
+            assert all(it.shape[0] == len(cell_vector_list) for it in inner_coordinate_list)
+            assert isinstance(periodicity, bool) or isinstance(periodicity,list),'参数periodicity必须是list对象'
+
+            ##  赋值
+            self.cell_period_list = cell_period_list
+            self.cell_vector_list = cell_vector_list
+            self.inner_site_list = inner_site_list
+            self.inner_coordinate_list = inner_coordinate_list
+            self.periodicity = periodicity
 
     # %%  USER：获得格点坐标
     """""
@@ -161,12 +178,31 @@ class LatticeFormat:
         return array
 
 
-    #%%  KEY：获得Site对象
-    def get_site(self,index_tuple)->SiteFormat:
-        return self.inner_site_list[index_tuple[-1]].copy()
+    #%%  KEY：获得Site局域算符局域numpy形式
+    def get_site_operator_numpy(self, index_tuple, name):
+        assert isinstance(name,str),'参数name必须是str对象'
+        if isinstance(index_tuple,tuple):
+            return self.inner_site_list[index_tuple[-1]].get_operator_dictionary()[name]
+        elif isinstance(index_tuple,int):
+            return self.inner_site_list[index_tuple].get_operator_dictionary()[name]
 
 
-    #%%  KEY：构造晶格对象
-    @ abstractmethod
-    def build_lattice(self):
-        pass
+    #%%  KEY：获得Site局域算符字典
+    def get_site_operator_dictionary(self,index_tuple):
+        if isinstance(index_tuple,tuple):
+            return self.inner_site_list[index_tuple[-1]].get_operator_dictionary()
+        elif isinstance(index_tuple,int):
+            return self.inner_site_list[index_tuple].get_operator_dictionary()
+
+
+    #%%  KEY：获得Site局域维度
+    def get_site_dimension(self,index_tuple):
+        if isinstance(index_tuple,tuple):
+            return self.inner_site_list[index_tuple[-1]].get_dimension()
+        elif isinstance(index_tuple,int):
+            return self.inner_site_list[index_tuple].get_dimension()
+
+
+    #%%  KEY：获得周期性
+    def get_periodicity(self):
+        return self.periodicity

@@ -46,9 +46,8 @@ def get_operator_qutip(model,term):
     elif isinstance(term, OverallOnsiteTermFormat):
         op = term.get_op()  # 算符名称
         inner_index = term.get_position()  # 胞内序号
-        ##  对晶格遍历
+        ##  对晶格遍历，发现胞内坐标符合的就停下来求和
         for index_tuple, site_iteration in np.ndenumerate(model.get_dimension_array()):
-            ##  发现胞内坐标符合的就停下来求和
             if index_tuple[-1] == inner_index:
                 qobj = qobj + get_local_operator_qutip(model,index_tuple, op)
 
@@ -62,10 +61,24 @@ def get_operator_qutip(model,term):
             index_tuple_0_temp = index_tuple_iteration + (inner_index_0,)  # 第一个作用位点
 
             ##  第二个作用位点
-            index_tuple_1_temp = ()
+            index_tuple_1_temp_temp = ()
             for i in range(len(cell_vector)):
-                index_tuple_1_temp = index_tuple_1_temp + (cell_vector[i] + index_tuple_0_temp[i],)
-            index_tuple_1_temp = index_tuple_1_temp + (inner_index_1,)
+                index_tuple_1_temp_temp = index_tuple_1_temp_temp + (cell_vector[i] + index_tuple_0_temp[i],)
+            index_tuple_1_temp_temp = index_tuple_1_temp_temp + (inner_index_1,)
+
+            ##  应用周期条件
+            bc=model.get_periodicity()
+            index_tuple_1_temp=()
+            if isinstance(bc,bool):
+                if bc:
+                    for i in range(len(index_tuple_1_temp_temp)-1):
+                        index_tuple_1_temp=index_tuple_1_temp+(np.mod(index_tuple_1_temp_temp[i],model.get_cell_period_list()[i]),)
+                    index_tuple_1_temp = index_tuple_1_temp + (index_tuple_1_temp_temp[-1],)
+            elif isinstance(bc,list):
+                for i in range(len(index_tuple_1_temp_temp) - 1):
+                    if bc[i]:
+                        index_tuple_1_temp = index_tuple_1_temp + (np.mod(index_tuple_1_temp_temp[i], model.get_cell_period_list()[i]),)
+                index_tuple_1_temp = index_tuple_1_temp + (index_tuple_1_temp_temp[-1],)
 
             ##  判断位点不要跳出晶格范围
             if all(index_tuple_1_temp[it] < model.get_cell_period_list()[it] for it in range(len(model.get_cell_period_list()))):
@@ -74,17 +87,35 @@ def get_operator_qutip(model,term):
     ##  SECTION：OverallMultiTermFormat作用量-------------------------------------------------------
     elif isinstance(term, OverallMultiTermFormat):
         op_list = term.get_op()  # 算符名称
-        inner_index_list, cell_vector_list = term.get_unit()  # 胞内序号和相对格位移
+        inner_index_list, cell_vector_list = term.get_position()  # 胞内序号和相对格位移
 
         ##  遍历晶格
         for index_tuple_iteration, site_iteration in np.ndenumerate(model.get_dimension_array()[..., 0]):
-            index_tuple_list_temp = []
+            index_tuple_list_temp_temp = []
             flag = True
             for i in range(len(inner_index_list)):
                 index_tuple_temp = ()
                 for j in range(len(index_tuple_iteration)):
-                    index_tuple_temp = index_tuple_temp + (index_tuple_list_temp[j] + cell_vector_list[j],)
+                    index_tuple_temp = index_tuple_temp + (index_tuple_list_temp_temp[j] + cell_vector_list[j],)
                 index_tuple_temp = index_tuple_temp + (inner_index_list[i],)
+                index_tuple_list_temp_temp.append(index_tuple_temp)
+
+            ##  应用周期条件
+            bc=model.get_periodicity()
+            index_tuple_list_temp=[]
+            for j in range(len(index_tuple_list_temp_temp)):
+                index_tuple_temp=()
+                index_tuple_temp_temp=index_tuple_list_temp_temp[j]
+                if isinstance(bc,bool):
+                    if bc:
+                        for i in range(len(index_tuple_temp_temp)-1):
+                            index_tuple_temp=index_tuple_temp+(np.mod(index_tuple_temp_temp[i],model.get_cell_period_list()[i]),)
+                        index_tuple_temp = index_tuple_temp + (index_tuple_temp_temp[-1],)
+                elif isinstance(bc,list):
+                    for i in range(len(index_tuple_temp_temp) - 1):
+                        if bc[i]:
+                            index_tuple_temp = index_tuple_temp + (np.mod(index_tuple_temp_temp[i], model.get_cell_period_list()[i]),)
+                    index_tuple_temp = index_tuple_temp + (index_tuple_temp_temp[-1],)
                 index_tuple_list_temp.append(index_tuple_temp)
 
             ##  添加判断格点是否跳出范围
@@ -108,7 +139,7 @@ def get_operator_qutip(model,term):
     else:
         if term.effect=='noise':
             return [qobj,term.strength]
-        elif term.effect=='hamiltonian' or term.effect=='lindblad':
+        elif term.effect=='hamiltonian' or term.effect=='lindblad' or term.effect=='observe':
             return qobj*term.strength
         else:
             raise TypeError('不支持的作用量类型')

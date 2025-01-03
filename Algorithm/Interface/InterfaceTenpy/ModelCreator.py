@@ -16,7 +16,7 @@ class ModelCreator(CouplingMPOModel):
         ##  SECTION：标准化-------------------------------------------------------------------------
         term_list = model_params.get('model_format', None)
         lattice = get_lattice_tenpy(model_params.get('model_format', None))
-        time = model_params.get('time', None)
+        time = model_params.get('time', 0)
         assert isinstance(term_list, TermsFormat), 'term_list must be of type TermList'
         assert isinstance(lattice, Lattice), 'lattice must be of type Lattice'
 
@@ -79,7 +79,7 @@ class ModelCreator(CouplingMPOModel):
 
                 ##  SECTION：遍历多体相互作用量
                 elif isinstance(term_temp, OverallMultiTermFormat):
-                    cell_list, vector_list = term_temp.get_unit()
+                    cell_list, vector_list = term_temp.get_position()
                     op_list = term_temp.get_op()
                     if term_temp.time:
                         strength = term_temp.function(time, term_temp.function_params)

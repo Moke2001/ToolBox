@@ -13,7 +13,4 @@ def expectation_tenpy(model_format,state,term):
     psi=state_preparer(model_format,state,'tenpy')
 
     ##  SECTION：基于tenpy计算----------------------------------------------------------------------
-    if psi.mps:
-        return get_operator_tenpy(model_format,term).expectation_value(psi.mps)
-    else:
-        raise ValueError('态矢没有初始化')
+    return get_operator_tenpy(model_format,term).expectation_value(psi.mps)

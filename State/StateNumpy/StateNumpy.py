@@ -11,7 +11,7 @@ class StateNumpy:
             self.tensor=None
             self.dimension_array=None
 
-        ##  SECTION：次标准构造函数-----------------------------------------------------------------
+        ##  SECTION：局域加和构造函数-----------------------------------------------------------------
         elif  all(isinstance(it,np.ndarray) for it in args) and all(it.dtype == LocalStateNumpy for it in args):
             dimension_array=[]
             for index_tuple, state_local_temp in np.ndenumerate(args[0]):

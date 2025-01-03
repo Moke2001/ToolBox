@@ -8,12 +8,12 @@ class LocalStateNumpy:
     self.amount_array：np.ndarray对象，对应基矢系数
     """""
     def __init__(self,dimension:int,amount_array:np.ndarray):
-        ##  标准化
+        ##  SECTION：标准化
         assert isinstance(dimension,int),'参数dimension必须是int对象'
         assert isinstance(amount_array,np.ndarray),'参数amount_array必须是np.ndarray对象'
         assert dimension==amount_array.shape[0],'参数dimension必须和参数amount_array维度匹配'
 
-        ##  赋值
+        ##  SECTION：赋值
         self.dimension=dimension  # 局域Hilbert空间维度
         self.amount_array=amount_array  # 基矢系数
 

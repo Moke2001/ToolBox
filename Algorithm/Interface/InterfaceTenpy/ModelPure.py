@@ -56,7 +56,7 @@ class ModelPure(CouplingMPOModel):
 
             ##  SECTION：遍历多体相互作用量
             elif isinstance(term_temp,OverallMultiTermFormat):
-                cell_list,vector_list=term_temp.get_unit()
+                cell_list,vector_list=term_temp.get_position()
                 op_list=term_temp.get_op()
                 unit_list=[]
                 for i in range(len(cell_list)):

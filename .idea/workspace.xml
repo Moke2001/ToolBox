@@ -6,29 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="修订">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/ApplyQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/ApplyQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/EvolutionSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/EvolutionSolverQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/ExpectationQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/ExpectationQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/GroundStateSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/GroundStateSolverQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/MeasurementSimulatorQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/MeasurementSimulatorQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/OverlapQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmQutip/OverlapQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmSolver/AlgorithmSolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmSolver/AlgorithmSolver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/ApplyTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/ApplyTenpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/EvolutionSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/EvolutionSolverTenpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/ExpectationTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/ExpectationTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/GroundStateSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/GroundStateSolverTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/MeasurementSimulatorTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/MeasurementSimulatorTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/OverlapTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AlgorithmTenpy/OverlapTenpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceQutip/Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceQutip/FunctionQutip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceQutip/GetModelQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceQutip/GetModelQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceQutip/GetLocalOperatorQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceQutip/GetLocalOperatorQutip.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceQutip/GetOperatorQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceQutip/GetOperatorQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/GetLatticeTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/GetLatticeTenpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/GetModelTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/GetModelTenpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/GetOperatorTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/GetOperatorTenpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/ModelCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/ModelCreator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/ModelPure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Interface/InterfaceTenpy/ModelPure.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/State/StatePreparer/StatePreparer.py" beforeDir="false" afterPath="$PROJECT_DIR$/State/StatePreparer/StatePreparer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/State/StateQutip/StateQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/State/StateQutip/StateQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/LatticeFormat/LatticeFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/LatticeFormat/LatticeFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/ModelFormat/ModelFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/ModelFormat/ModelFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/SiteFormat/SiteFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/SiteFormat/SiteFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/TermFormat/CouplingTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/TermFormat/CouplingTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/TermFormat/MultiTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/TermFormat/MultiTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/TermFormat/OnsiteTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/TermFormat/OnsiteTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/TermFormat/OverallCouplingTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/TermFormat/OverallCouplingTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/TermFormat/OverallMultiTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/TermFormat/OverallMultiTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/TermFormat/OverallOnsiteTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/TermFormat/OverallOnsiteTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Format/TermFormat/TermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Format/TermFormat/TermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State/StateNumpy/LocalStateNumpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/State/StateNumpy/LocalStateNumpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State/StateNumpy/StateNumpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/State/StateNumpy/StateNumpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/State/StateTenpy/StateTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/State/StateTenpy/StateTenpy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -376,7 +375,10 @@
       <workItem from="1735199462815" duration="515000" />
       <workItem from="1735201496673" duration="4856000" />
       <workItem from="1735276015496" duration="624000" />
-      <workItem from="1735367836362" duration="933000" />
+      <workItem from="1735367836362" duration="1016000" />
+      <workItem from="1735451339485" duration="4916000" />
+      <workItem from="1735524569278" duration="4637000" />
+      <workItem from="1735831046728" duration="4548000" />
     </task>
     <task id="LOCAL-00001" summary="Fix">
       <option name="closed" value="true" />
@@ -458,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735199412582</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修订">
+      <option name="closed" value="true" />
+      <created>1735368807463</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735368807463</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,15 +512,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="index_temp" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ToolBox$.coverage" NAME="脚本 覆盖结果" MODIFIED="1734492498669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SSH模型中的多体局域化" />
-    <SUITE FILE_PATH="coverage/ToolBox$Example__1_.coverage" NAME="Example (1) 覆盖结果" MODIFIED="1735266895642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ToolBox$Example__1_.coverage" NAME="Example (1) 覆盖结果" MODIFIED="1735456264042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ToolBox$__1_.coverage" NAME="脚本 (1) 覆盖结果" MODIFIED="1734535900941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationX" />
     <SUITE FILE_PATH="coverage/ToolBox$qutipLSR__1_.coverage" NAME="用qutip计算LSR (1) 覆盖结果" MODIFIED="1734492547230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ToolBox$LSR.coverage" NAME="计算LSR 覆盖结果" MODIFIED="1733369631273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />

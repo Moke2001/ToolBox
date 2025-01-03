@@ -19,13 +19,13 @@ def get_operator_tenpy(model_format,term):
 
     ##  SECTION：构造MPO----------------------------------------------------------------------------
     ##  利用模型构造MPO
-    terms_temp = TermsFormat()
-    terms_temp.push(term)
+    model_temp = ModelFormat(model_format)
+    model_temp.clear()
+    model_temp.push(term)
 
     ##  基于tenpy的计算
     model_params = {
-        'term_list': model_format,
-        'lattice'  : model_format,
+        'model_format': model_temp,
         'time'     : 0,
     }
 
@@ -36,7 +36,7 @@ def get_operator_tenpy(model_format,term):
 
     ##  不含时的情况
     else:
-        if term.effect=='hamiltonian' or term.effect=='lindblad':
+        if term.effect=='hamiltonian' or term.effect=='lindblad' or term.effect=='observe':
             model_temp=ModelCreator(model_params)
             return model_temp.calc_H_MPO()
         elif term.effect=='noise':

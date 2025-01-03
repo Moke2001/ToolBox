@@ -7,21 +7,18 @@ class SiteFormat:
     """""
     SiteFormat：格式类格点对象
     self.dimension：格式类属性，int对象，格点局部Hilbert空间维度
-    self.conserve：格式类属性，str对象，格点守恒物理量
     self.operator_dict：格式类属性，dict对象，格点的局域算符的np.ndarray及其名称
     """""
     def __init__(self,*args):
         ##  SECTION：复制构造函数-------------------------------------------------------------------
         if len(args)==1 and isinstance(args[0], SiteFormat):
             self.dimension = args[0].get_dimension()  # 格式属性：局域Hilbert空间维度
-            self.conserve = args[0].get_conserve()  # 格式属性：守恒量
             self.operator_dictionary = args[0].get_operator_dictionary()  # 格式属性：算符字典
 
 
-        #%%  SECTION：标准构造函数------------------------------------------------------------------
-        elif len(args)==2 and isinstance(args[0],int):
+        ##  SECTION：标准构造函数------------------------------------------------------------------
+        elif len(args)==1 and isinstance(args[0],int):
             self.dimension = args[0]  # 格式属性：局域Hilbert空间维度
-            self.conserve = args[1]  # 格式属性：守恒量
             self.operator_dictionary = {'identity': np.eye(self.dimension),}  # 格式属性：算符字典
 
 
@@ -68,14 +65,6 @@ class SiteFormat:
         return self.operator_dictionary
 
 
-    #%%  KEY：获取守恒量
-    """
-    output：str对象，返回格点守恒量名称
-    """
-    def get_conserve(self)->str:
-        return self.conserve
-
-
     # %%  KEY：复制函数
     """
     output：SiteFormat对象，与self相同的属性
@@ -87,13 +76,12 @@ class SiteFormat:
 
     #%%  USER：实现一个SpinHalfSite
     """
-    input.consever：str对象，守恒量
     output：SiteFormat对象，添加相应的算符
     influence：本函数不改变参数对象
     """
     @staticmethod
-    def SpinHalfSiteFormat(conserve):
-        site=SiteFormat(2,conserve)
+    def SpinHalfSiteFormat():
+        site=SiteFormat(2)
         site.push_operator('sigmax', np.array([[0,1],[1,0]],dtype=complex))
         site.push_operator('sigmay', np.array([[0,-1j],[1j,0]],dtype=complex))
         site.push_operator('sigmaz', np.array([[1,0],[0,-1]],dtype=complex))
