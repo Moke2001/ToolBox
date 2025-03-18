@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="修订">
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode/DualContainingCode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode/EuclideanCode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/Code/QuantumCode/PauliCode/CSSCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/MapCode.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/MapCode.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Main/MapChain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Main/MapChain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Css2Fermi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Css2Fermi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Pauli2Majorana.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Pauli2Majorana.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/FermiOperator.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/MajoranaOperator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/FermiStabilizerCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/FermiStabilizerCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliOperator.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliOperator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/StabilizerCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/StabilizerCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algebra/BitString/BitString.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algebra/BitString/BitString.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algebra/Group/MajoranaGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algebra/Group/MajoranaGroup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algebra/Group/PauliGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algebra/Group/PauliGroup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode/LinearCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode/LinearCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Physics/QuantumComputation/Code/QuantumCode/MajoranaCode/MajoranaCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumComputation/Code/QuantumCode/MajoranaCode/MajoranaCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Physics/QuantumComputation/Code/QuantumCode/PauliCode/PauliCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumComputation/Code/QuantumCode/PauliCode/PauliCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Moke2001/ToolBox.git&quot;,
-    &quot;accountId&quot;: &quot;fa381424-6db1-4b7a-8700-9c274569e42a&quot;
+    &quot;accountId&quot;: &quot;e921cb9c-fa79-48b2-8894-e32f36e1968c&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -78,17 +79,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.BitString.executor": "Debug",
+    "Python.CSSCode.executor": "Debug",
+    "Python.Css2Fermi.executor": "Run",
+    "Python.DualContainingCode.executor": "Run",
     "Python.Example (1).executor": "Run",
     "Python.Example.executor": "Run",
     "Python.FermiOperator.executor": "Debug",
     "Python.FermiStabilizerCode (1).executor": "Run",
     "Python.FermiStabilizerCode.executor": "Debug",
     "Python.FermionicStabilizerCode.executor": "Debug",
+    "Python.Group.executor": "Debug",
     "Python.KnillLaflamme.executor": "Run",
+    "Python.LinearCode (1).executor": "Run",
+    "Python.LinearCode.executor": "Run",
+    "Python.MajoranaCode (1).executor": "Debug",
+    "Python.MajoranaCode.executor": "Run",
+    "Python.MajoranaGroup.executor": "Run",
+    "Python.PauliHypergraphProductCode.executor": "Debug",
     "Python.PauliStabilizerCode (1).executor": "Run",
     "Python.PauliStabilizerCode.executor": "Run",
     "Python.PhysicsQuantumCircuit.executor": "Run",
-    "Python.Test.executor": "Run",
+    "Python.Test.executor": "Debug",
     "Python.test.executor": "Run",
     "Python.用qutip计算LSR (1).executor": "Debug",
     "Python.用qutip计算LSR.executor": "Run",
@@ -105,7 +117,7 @@
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/moke_/Desktop/Cloud/Program/ToolBox",
+    "last_opened_file_path": "C:/Users/win11/Desktop/Cloud/Program/ToolBox/Physics/QuantumComputation/CliffordSimulator/MajoranaCircuit",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,22 +134,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\CliffordSimulator\MajoranaCircuit" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Algebra\TensorNetwork" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\SSH模型中的多体局域化" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmTenpy" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmSolver" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmQutip" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\QutipBox" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\QuantumComputation\ErrorCorrectionCode\FermiStabilizerCode" />
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\QuantumComputation\ErrorCorrectionCode\PauliStabilizerCode" />
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\QuantumComputation\QuantumProcessor" />
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\Project\FermionicLDPCCode\Experiment" />
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\Project\FermionicLDPCCode\Main" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Algebra" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\Encoder\Code\QuantumCode\MajoranaCode" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\Encoder\Code\QuantumCode\PauliCode" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Project\FermionicLDPCCode\Main" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Test">
-    <configuration name="FermiStabilizerCode (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="BitString" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,12 +158,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Physics/QuantumComputation/CliffordSimulator/Code/ClassicalCode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/FermiStabilizerCode.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\win11\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\CliffordSimulator\BitString\BitString.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,7 +172,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="FermiStabilizerCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="CSSCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,12 +181,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Physics/QuantumComputation/Code/QuantumCode/PauliCode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\win11\Desktop\Cloud\Program\ToolBox\QuantumComputation\ErrorCorrectionCode\FermiStabilizerCode\FermiStabilizerCode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Physics/QuantumComputation/Code/QuantumCode/PauliCode/CSSCode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,7 +195,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MajoranaOperator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="DualContainingCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,12 +204,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\QuantumComputation\ErrorCorrectionCode\FermiStabilizerCode\MajoranaOperator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode/DualContainingCode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -206,7 +218,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PauliStabilizerCode (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="LinearCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,12 +227,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode/LinearCode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,27 +265,27 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.FermiStabilizerCode (1)" />
-      <item itemvalue="Python.MajoranaOperator" />
-      <item itemvalue="Python.PauliStabilizerCode (1)" />
-      <item itemvalue="Python.FermiStabilizerCode" />
+      <item itemvalue="Python.DualContainingCode" />
+      <item itemvalue="Python.LinearCode" />
+      <item itemvalue="Python.CSSCode" />
+      <item itemvalue="Python.BitString" />
       <item itemvalue="Python.Test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Test" />
-        <item itemvalue="Python.FermiStabilizerCode (1)" />
-        <item itemvalue="Python.MajoranaOperator" />
-        <item itemvalue="Python.PauliStabilizerCode (1)" />
-        <item itemvalue="Python.FermiStabilizerCode" />
+        <item itemvalue="Python.LinearCode" />
+        <item itemvalue="Python.DualContainingCode" />
+        <item itemvalue="Python.CSSCode" />
+        <item itemvalue="Python.BitString" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
+        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
       </set>
     </attachedChunks>
   </component>
@@ -341,6 +353,39 @@
       <workItem from="1739534293586" duration="4735000" />
       <workItem from="1739543370303" duration="77000" />
       <workItem from="1739783295893" duration="5581000" />
+      <workItem from="1739795735158" duration="10542000" />
+      <workItem from="1739884797197" duration="1008000" />
+      <workItem from="1739943234943" duration="6666000" />
+      <workItem from="1739961334499" duration="681000" />
+      <workItem from="1739967972219" duration="4189000" />
+      <workItem from="1740548453904" duration="5552000" />
+      <workItem from="1741225039276" duration="2973000" />
+      <workItem from="1741308446652" duration="373000" />
+      <workItem from="1741312077379" duration="2452000" />
+      <workItem from="1741441052913" duration="395000" />
+      <workItem from="1741585616583" duration="4564000" />
+      <workItem from="1741591246123" duration="10258000" />
+      <workItem from="1742108115003" duration="5299000" />
+      <workItem from="1742190827130" duration="4310000" />
+      <workItem from="1742265810370" duration="66000" />
+      <workItem from="1742285208903" duration="3117000" />
+      <workItem from="1742342622998" duration="3515000" />
+      <workItem from="1742362364184" duration="12753000" />
+      <workItem from="1742434913865" duration="6519000" />
+      <workItem from="1742451780452" duration="9640000" />
+      <workItem from="1742462111596" duration="3793000" />
+      <workItem from="1742537710983" duration="4684000" />
+      <workItem from="1742779181639" duration="4693000" />
+      <workItem from="1742793564819" duration="5406000" />
+      <workItem from="1742805498256" duration="3552000" />
+      <workItem from="1742893314830" duration="2103000" />
+      <workItem from="1742895439129" duration="39000" />
+      <workItem from="1742895494356" duration="1211000" />
+      <workItem from="1742967224930" duration="1542000" />
+      <workItem from="1743145781524" duration="4471000" />
+      <workItem from="1743314072488" duration="15035000" />
+      <workItem from="1744096227452" duration="8869000" />
+      <workItem from="1744197875544" duration="6553000" />
     </task>
     <task id="LOCAL-00001" summary="Fix">
       <option name="closed" value="true" />
@@ -446,7 +491,63 @@
       <option name="project" value="LOCAL" />
       <updated>1739614473947</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修订">
+      <option name="closed" value="true" />
+      <created>1742265829352</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1742265829352</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修订">
+      <option name="closed" value="true" />
+      <created>1742712296930</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1742712296930</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修订">
+      <option name="closed" value="true" />
+      <created>1742787087318</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1742787087318</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修订">
+      <option name="closed" value="true" />
+      <created>1742797984178</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1742797984178</updated>
+    </task>
+    <task id="LOCAL-00018" summary="修订">
+      <option name="closed" value="true" />
+      <created>1742875721289</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1742875721289</updated>
+    </task>
+    <task id="LOCAL-00019" summary="修订">
+      <option name="closed" value="true" />
+      <created>1742895245032</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1742895245032</updated>
+    </task>
+    <task id="LOCAL-00020" summary="修订">
+      <option name="closed" value="true" />
+      <created>1743152333398</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1743152333398</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,26 +584,47 @@
           <line>19</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Physics/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/Test.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ToolBox$FermiStabilizerCode__1_.coverage" NAME="FermiStabilizerCode (1) 覆盖结果" MODIFIED="1739779861226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode" />
     <SUITE FILE_PATH="coverage/ToolBox$Example.coverage" NAME="Example 覆盖结果" MODIFIED="1733479939407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QutipToolBox" />
-    <SUITE FILE_PATH="coverage/ToolBox$.coverage" NAME="脚本 覆盖结果" MODIFIED="1734492498669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SSH模型中的多体局域化" />
     <SUITE FILE_PATH="coverage/ToolBox$LSR.coverage" NAME="计算LSR 覆盖结果" MODIFIED="1733369631273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/ToolBox$KnillLaflamme.coverage" NAME="KnillLaflamme 覆盖结果" MODIFIED="1739266896782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
-    <SUITE FILE_PATH="coverage/ToolBox$PauliStabilizerCode__1_.coverage" NAME="PauliStabilizerCode (1) 覆盖结果" MODIFIED="1739699257673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$DualContainingCode.coverage" NAME="DualContainingCode 覆盖结果" MODIFIED="1744104220688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$BitString.coverage" NAME="BitString 覆盖结果" MODIFIED="1742457649695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/CliffordSimulator/Code/ClassicalCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$LinearCode__1_.coverage" NAME="LinearCode (1) 覆盖结果" MODIFIED="1742288334556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code/ClassicalCode" />
     <SUITE FILE_PATH="coverage/ToolBox$Example__1_.coverage" NAME="Example (1) 覆盖结果" MODIFIED="1739169564881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation" />
-    <SUITE FILE_PATH="coverage/ToolBox$PhysicsQuantumCircuit.coverage" NAME="PhysicsQuantumCircuit 覆盖结果" MODIFIED="1739176451247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/PhysicalQuantumCircuit" />
     <SUITE FILE_PATH="coverage/ToolBox$FermionicStabilizerCode.coverage" NAME="FermionicStabilizerCode 覆盖结果" MODIFIED="1739523540847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
-    <SUITE FILE_PATH="coverage/ToolBox$__1_.coverage" NAME="脚本 (1) 覆盖结果" MODIFIED="1734494768201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationX" />
-    <SUITE FILE_PATH="coverage/ToolBox$qutipLSR__1_.coverage" NAME="用qutip计算LSR (1) 覆盖结果" MODIFIED="1734492547230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ToolBox$Test.coverage" NAME="Test 覆盖结果" MODIFIED="1739787910135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment" />
-    <SUITE FILE_PATH="coverage/ToolBox$PauliStabilizerCode.coverage" NAME="PauliStabilizerCode 覆盖结果" MODIFIED="1739449093015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$CSSCode.coverage" NAME="CSSCode 覆盖结果" MODIFIED="1743386483872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/Code/QuantumCode/PauliCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$MajoranaCode.coverage" NAME="MajoranaCode 覆盖结果" MODIFIED="1742193178191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code" />
     <SUITE FILE_PATH="coverage/ToolBox$FermiStabilizerCode.coverage" NAME="FermiStabilizerCode 覆盖结果" MODIFIED="1739534415655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
     <SUITE FILE_PATH="coverage/ToolBox$FermiOperator.coverage" NAME="FermiOperator 覆盖结果" MODIFIED="1739757131442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode" />
-    <SUITE FILE_PATH="coverage/ToolBox$test.coverage" NAME="test 覆盖结果" MODIFIED="1739186822994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation" />
+    <SUITE FILE_PATH="coverage/ToolBox$PauliHypergraphProductCode.coverage" NAME="PauliHypergraphProductCode 覆盖结果" MODIFIED="1742439049172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project/FermionicLDPCCode/Main" />
     <SUITE FILE_PATH="coverage/ToolBox$qutipLSR.coverage" NAME="用qutip计算LSR 覆盖结果" MODIFIED="1733638733094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/ToolBox$.coverage" NAME="脚本 覆盖结果" MODIFIED="1734492498669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SSH模型中的多体局域化" />
+    <SUITE FILE_PATH="coverage/ToolBox$PauliStabilizerCode__1_.coverage" NAME="PauliStabilizerCode (1) 覆盖结果" MODIFIED="1739699257673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$LinearCode.coverage" NAME="LinearCode 覆盖结果" MODIFIED="1744203152064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/Code/ClassicalCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$Css2Fermi.coverage" NAME="Css2Fermi 覆盖结果" MODIFIED="1742437776880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project/FermionicLDPCCode/Main" />
+    <SUITE FILE_PATH="coverage/ToolBox$PhysicsQuantumCircuit.coverage" NAME="PhysicsQuantumCircuit 覆盖结果" MODIFIED="1739176451247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/PhysicalQuantumCircuit" />
+    <SUITE FILE_PATH="coverage/ToolBox$__1_.coverage" NAME="脚本 (1) 覆盖结果" MODIFIED="1734494768201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationX" />
+    <SUITE FILE_PATH="coverage/ToolBox$qutipLSR__1_.coverage" NAME="用qutip计算LSR (1) 覆盖结果" MODIFIED="1734492547230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ToolBox$Test.coverage" NAME="Test 覆盖结果" MODIFIED="1744203911118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment" />
+    <SUITE FILE_PATH="coverage/ToolBox$PauliStabilizerCode.coverage" NAME="PauliStabilizerCode 覆盖结果" MODIFIED="1739449093015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$MajoranaCode__1_.coverage" NAME="MajoranaCode (1) 覆盖结果" MODIFIED="1742437118130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/CliffordSimulator/Code/QuantumCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$test.coverage" NAME="test 覆盖结果" MODIFIED="1739186822994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation" />
+    <SUITE FILE_PATH="coverage/ToolBox$MajoranaGroup.coverage" NAME="MajoranaGroup 覆盖结果" MODIFIED="1742437540560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/CliffordSimulator/Group" />
+    <SUITE FILE_PATH="coverage/ToolBox$Group.coverage" NAME="Group 覆盖结果" MODIFIED="1741313617429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algebra/Group" />
   </component>
 </project>
