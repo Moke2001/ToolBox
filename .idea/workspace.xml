@@ -5,16 +5,163 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ceaa29-8dcc-4e0f-8e9f-292332368b77" name="更改" comment="修订">
+      <change afterPath="$PROJECT_DIR$/Algebra/Group/Group.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/GeneralOperator/PauliOperator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/GeneralOperator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/Hamiltonian/HamiltonianPXP.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/Hamiltonian/HamiltonianTransverseFieldIsing1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/Hamiltonian/HamiltonianTransverseFieldXY1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/Hamiltonian/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/LindbladList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/Lindbladian/LocalDecay.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/Lindbladian/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/Operator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/OperatorList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Operator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Relation/Expect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Relation/MatrixTerm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Relation/OperateOperator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Relation/OperateState.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/Relation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/State/MatrixProductOperator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/State/MatrixProductState.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/State/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Basis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/DensityMatrixRenormalizationGroup/DMRG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/DensityMatrixRenormalizationGroup/EffectiveHamiltonian.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/DensityMatrixRenormalizationGroup/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/DensityMatrixRenormalizationGroup/iDMRG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/EliquibriumSolver/ES.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/EliquibriumSolver/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemEvolve/QuantumTrajectory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemEvolve/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/GeneralOperator/PauliOperator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/GeneralOperator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/Hamiltonian/HamiltonianPXP.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/Hamiltonian/HamiltonianTransverseFieldIsing1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/Hamiltonian/HamiltonianTransverseFieldXY1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/Hamiltonian/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/LindbladList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/Lindbladian/LocalDecay.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/Lindbladian/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/Operator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/OperatorList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Operator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Relation/Expect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Relation/MatrixTerm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Relation/OperateOperator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Relation/OperateState.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/Relation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/State/MatrixProductOperator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/State/MatrixProductState.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/State/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/Basis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/OpenSystemQutipMineCompare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/QuantumTrajectory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/OpenSystemTEBD/TEBD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Main/HamiltonianCreator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Main/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Measure/Measure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Measure/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Operator/GeneralOperator/OperatorSigma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Operator/GeneralOperator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Operator/Hamiltonian/HamiltonianIsing1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Operator/Hamiltonian/HamiltonianTransverseIsing1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Operator/Hamiltonian/HamiltonianTwoLevelSystem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Operator/Hamiltonian/HamiltonianXY1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Operator/Hamiltonian/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/Operator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/QutipBox/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Test/ClosedSystemQutipMineCompare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Test/OpenSystemQutipMineCompare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Test/PXPModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/TimeEvolveBlockDecimation/TEBD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/TimeEvolveBlockDecimation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Tool/MPOTensorProduct.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Tool/MPSTensorProduct.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Tool/SVD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Tool/Singular2Matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Tool/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algebra/TensorNetwork/Tool/expand_dim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Basis/Basis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Circuit/PauliCircuit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/CliffordSimulator/MajoranaComputer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/CliffordSimulator/PauliComputer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code/ClassicalCode/Codeword.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code/ClassicalCode/LinearCode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code/QuantumCode/MajoranaCode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code/QuantumCode/PauliCode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Group/Group.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Group/MajoranaGroup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Group/PauliGroup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/QuantumHypergraphCode/QuantumHypergraphCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/MapCode.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/MapCode.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Main/MapChain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Main/MapChain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Css2Fermi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Css2Fermi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Majorana2Css.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Majorana2Css.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Pauli2Majorana.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/FermionicLDPCCode/Map/Pauli2Majorana.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/FermiOperator.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/MajoranaOperator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/FermiStabilizerCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/FermiStabilizerCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliOperator.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliOperator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/StabilizerCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/StabilizerCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/FermionicLDPCCode/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/FermiStabilizerCode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode/MajoranaOperator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliOperator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/QutipStabilizerCode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/StabilizerCode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/Helper/OperatorGenerator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/Helper/StateGenerator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/ErrorModel/ErrorModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/ErrorModel/FermionicGateErrorModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/ErrorModel/PauliGateErrorModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/ErrorModel/PauliPeriodicErrorModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/ErrorModel/UnitaryErrorModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/LogicalProcessor/LogicalProcessor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/PhysicalProcessor/PhysicalProcessor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/PhysicalProcessor/RydbergFermionProcessor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/QuantumProcessor/PhysicalProcessor/RydbergQubitProcessor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumComputation/Test.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmQutip/ApplyQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmQutip/ApplyQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmQutip/EnergySpectrumSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmQutip/EnergySpectrumSolverQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmQutip/EvolutionSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmQutip/EvolutionSolverQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmQutip/ExpectationQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmQutip/ExpectationQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmQutip/GroundStateSolverQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmQutip/GroundStateSolverQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmQutip/MeasurementSimulatorQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmQutip/MeasurementSimulatorQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmQutip/OverlapQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmQutip/OverlapQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmSolver/AlgorithmSolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmSolver/AlgorithmSolver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmTenpy/ApplyTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmTenpy/ApplyTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmTenpy/EnergySpectrumSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmTenpy/EnergySpectrumSolverTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmTenpy/EvolutionSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmTenpy/EvolutionSolverTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmTenpy/ExpectationTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmTenpy/ExpectationTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmTenpy/GroundStateSolverTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmTenpy/GroundStateSolverTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmTenpy/MeasurementSimulatorTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmTenpy/MeasurementSimulatorTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/AlgorithmTenpy/OverlapTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/AlgorithmTenpy/OverlapTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceQutip/FunctionQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceQutip/FunctionQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceQutip/GetLocalOperatorQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceQutip/GetLocalOperatorQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceQutip/GetModelQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceQutip/GetModelQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceQutip/GetOperatorQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceQutip/GetOperatorQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/GetLatticeTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/GetLatticeTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/GetModelTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/GetModelTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/GetOperatorTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/GetOperatorTenpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/ModelCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/ModelCreator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/ModelPure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Algorithm/Interface/InterfaceTenpy/ModelPure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/LatticeFormat/LatticeFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/LatticeFormat/LatticeFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/ModelFormat/ModelFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/ModelFormat/ModelFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/TermFormat/CouplingTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/TermFormat/CouplingTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/TermFormat/MultiTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/TermFormat/MultiTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/TermFormat/OnsiteTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/TermFormat/OnsiteTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/TermFormat/OverallCouplingTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/TermFormat/OverallCouplingTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/TermFormat/OverallMultiTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/TermFormat/OverallMultiTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/TermFormat/OverallOnsiteTermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/TermFormat/OverallOnsiteTermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/TermFormat/TermFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/TermFormat/TermFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/Format/TermFormat/TermsFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/Format/TermFormat/TermsFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/State/StateNumpy/StateNumpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/State/StateNumpy/StateNumpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/State/StatePreparer/StatePreparer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/State/StatePreparer/StatePreparer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/State/StateQutip/StateQutip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/State/StateQutip/StateQutip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuantumSimulation/State/StateTenpy/StateTenpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Physics/QuantumSimulation/State/StateTenpy/StateTenpy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +205,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Moke2001/ToolBox.git&quot;,
-    &quot;accountId&quot;: &quot;fa381424-6db1-4b7a-8700-9c274569e42a&quot;
+    &quot;accountId&quot;: &quot;e921cb9c-fa79-48b2-8894-e32f36e1968c&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -84,7 +231,10 @@
     "Python.FermiStabilizerCode (1).executor": "Run",
     "Python.FermiStabilizerCode.executor": "Debug",
     "Python.FermionicStabilizerCode.executor": "Debug",
+    "Python.Group.executor": "Debug",
     "Python.KnillLaflamme.executor": "Run",
+    "Python.LinearCode.executor": "Debug",
+    "Python.MajoranaCode.executor": "Run",
     "Python.PauliStabilizerCode (1).executor": "Run",
     "Python.PauliStabilizerCode.executor": "Run",
     "Python.PhysicsQuantumCircuit.executor": "Run",
@@ -105,7 +255,7 @@
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/moke_/Desktop/Cloud/Program/ToolBox",
+    "last_opened_file_path": "C:/Users/moke_/Desktop/Cloud/Program/ToolBox/Algebra/TensorNetwork",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,21 +272,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Algebra\TensorNetwork" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\SSH模型中的多体局域化" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmTenpy" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmSolver" />
       <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\Algorithm\AlgorithmQutip" />
-      <recent name="C:\Users\moke_\Desktop\Cloud\ToolBox\QutipBox" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\QuantumComputation\ErrorCorrectionCode\FermiStabilizerCode" />
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\QuantumComputation\ErrorCorrectionCode\PauliStabilizerCode" />
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\QuantumComputation\QuantumProcessor" />
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\Project\FermionicLDPCCode\Experiment" />
-      <recent name="C:\Users\win11\Desktop\Cloud\Program\ToolBox\Project\FermionicLDPCCode\Main" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\StabilizerSimulator\Code\QuantumCode" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\StabilizerSimulator\Code" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\StabilizerSimulator" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\StabilizerSimulator\Representation" />
+      <recent name="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\Representation" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.MajoranaCode">
     <configuration name="FermiStabilizerCode (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
@@ -160,7 +310,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="FermiStabilizerCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,12 +319,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algebra/Group" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\win11\Desktop\Cloud\Program\ToolBox\QuantumComputation\ErrorCorrectionCode\FermiStabilizerCode\FermiStabilizerCode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algebra/Group/Group.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,7 +333,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MajoranaOperator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="LinearCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,12 +342,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ClassicalComputation/ClassicalCode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\QuantumComputation\ErrorCorrectionCode\FermiStabilizerCode\MajoranaOperator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ClassicalComputation/ClassicalCode/LinearCode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -206,7 +356,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PauliStabilizerCode (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MajoranaCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ToolBox" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,12 +365,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\moke_\Desktop\Cloud\Program\ToolBox\Physics\QuantumComputation\StabilizerSimulator\Code\QuantumCode\MajoranaCode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,27 +403,27 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.MajoranaCode" />
+      <item itemvalue="Python.Group" />
       <item itemvalue="Python.FermiStabilizerCode (1)" />
-      <item itemvalue="Python.MajoranaOperator" />
-      <item itemvalue="Python.PauliStabilizerCode (1)" />
-      <item itemvalue="Python.FermiStabilizerCode" />
+      <item itemvalue="Python.LinearCode" />
       <item itemvalue="Python.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MajoranaCode" />
         <item itemvalue="Python.Test" />
+        <item itemvalue="Python.Group" />
+        <item itemvalue="Python.LinearCode" />
         <item itemvalue="Python.FermiStabilizerCode (1)" />
-        <item itemvalue="Python.MajoranaOperator" />
-        <item itemvalue="Python.PauliStabilizerCode (1)" />
-        <item itemvalue="Python.FermiStabilizerCode" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
+        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
       </set>
     </attachedChunks>
   </component>
@@ -341,6 +491,20 @@
       <workItem from="1739534293586" duration="4735000" />
       <workItem from="1739543370303" duration="77000" />
       <workItem from="1739783295893" duration="5581000" />
+      <workItem from="1739795735158" duration="10542000" />
+      <workItem from="1739884797197" duration="1008000" />
+      <workItem from="1739943234943" duration="6666000" />
+      <workItem from="1739961334499" duration="681000" />
+      <workItem from="1739967972219" duration="4189000" />
+      <workItem from="1740548453904" duration="5552000" />
+      <workItem from="1741225039276" duration="2973000" />
+      <workItem from="1741308446652" duration="373000" />
+      <workItem from="1741312077379" duration="2452000" />
+      <workItem from="1741441052913" duration="395000" />
+      <workItem from="1741585616583" duration="4564000" />
+      <workItem from="1741591246123" duration="10258000" />
+      <workItem from="1742108115003" duration="5299000" />
+      <workItem from="1742190827130" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="Fix">
       <option name="closed" value="true" />
@@ -483,6 +647,16 @@
           <line>19</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Physics/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode/PauliStabilizerCode.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code/ClassicalCode/LinearCode.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -493,16 +667,19 @@
     <SUITE FILE_PATH="coverage/ToolBox$LSR.coverage" NAME="计算LSR 覆盖结果" MODIFIED="1733369631273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/ToolBox$KnillLaflamme.coverage" NAME="KnillLaflamme 覆盖结果" MODIFIED="1739266896782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
     <SUITE FILE_PATH="coverage/ToolBox$PauliStabilizerCode__1_.coverage" NAME="PauliStabilizerCode (1) 覆盖结果" MODIFIED="1739699257673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/PauliStabilizerCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$LinearCode.coverage" NAME="LinearCode 覆盖结果" MODIFIED="1739970685997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ClassicalComputation/ClassicalCode" />
     <SUITE FILE_PATH="coverage/ToolBox$Example__1_.coverage" NAME="Example (1) 覆盖结果" MODIFIED="1739169564881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation" />
     <SUITE FILE_PATH="coverage/ToolBox$PhysicsQuantumCircuit.coverage" NAME="PhysicsQuantumCircuit 覆盖结果" MODIFIED="1739176451247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/PhysicalQuantumCircuit" />
     <SUITE FILE_PATH="coverage/ToolBox$FermionicStabilizerCode.coverage" NAME="FermionicStabilizerCode 覆盖结果" MODIFIED="1739523540847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
+    <SUITE FILE_PATH="coverage/ToolBox$MajoranaCode.coverage" NAME="MajoranaCode 覆盖结果" MODIFIED="1742193178191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Physics/QuantumComputation/StabilizerSimulator/Code" />
     <SUITE FILE_PATH="coverage/ToolBox$__1_.coverage" NAME="脚本 (1) 覆盖结果" MODIFIED="1734494768201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SSH模型中的多体局域化/EdgeStateLocalizationExpectationX" />
     <SUITE FILE_PATH="coverage/ToolBox$qutipLSR__1_.coverage" NAME="用qutip计算LSR (1) 覆盖结果" MODIFIED="1734492547230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ToolBox$Test.coverage" NAME="Test 覆盖结果" MODIFIED="1739787910135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment" />
+    <SUITE FILE_PATH="coverage/ToolBox$Test.coverage" NAME="Test 覆盖结果" MODIFIED="1742109812824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project/FermionicLDPCCode/Experiment" />
     <SUITE FILE_PATH="coverage/ToolBox$PauliStabilizerCode.coverage" NAME="PauliStabilizerCode 覆盖结果" MODIFIED="1739449093015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
     <SUITE FILE_PATH="coverage/ToolBox$FermiStabilizerCode.coverage" NAME="FermiStabilizerCode 覆盖结果" MODIFIED="1739534415655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode" />
     <SUITE FILE_PATH="coverage/ToolBox$FermiOperator.coverage" NAME="FermiOperator 覆盖结果" MODIFIED="1739757131442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation/ErrorCorrectionCode/FermiStabilizerCode" />
     <SUITE FILE_PATH="coverage/ToolBox$test.coverage" NAME="test 覆盖结果" MODIFIED="1739186822994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QuantumComputation" />
     <SUITE FILE_PATH="coverage/ToolBox$qutipLSR.coverage" NAME="用qutip计算LSR 覆盖结果" MODIFIED="1733638733094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/ToolBox$Group.coverage" NAME="Group 覆盖结果" MODIFIED="1741313617429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algebra/Group" />
   </component>
 </project>

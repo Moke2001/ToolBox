@@ -1,17 +1,17 @@
-from QuantumComputation.ErrorCorrectionCode.FermiStabilizerCode.MajoranaOperator import MajoranaOperator
-from QuantumComputation.ErrorCorrectionCode.FermiStabilizerCode.FermiStabilizerCode import FermiStabilizerCode
+from Physics.QuantumComputation.ErrorCorrectionCode.FermiStabilizerCode.MajoranaOperator import MajoranaOperator
+from Physics.QuantumComputation.ErrorCorrectionCode.FermiStabilizerCode.FermiStabilizerCode import FermiStabilizerCode
 
 
 def pauli2majorana(pauli_code):
     majorana_code = FermiStabilizerCode(pauli_code.N * 2)
     ##  添加稳定子的映射结果
-    for i in range(len(pauli_code.stabilizers)):
+    for i in range(len(pauli_code.generator_vector)):
         stabilizer = [0] * (pauli_code.N * 4)
-        for j in range(len(pauli_code.stabilizers[i])):
-            if pauli_code.stabilizers[i][j] == 'X':
+        for j in range(len(pauli_code.generator_vector[i])):
+            if pauli_code.generator_vector[i][j] == 'X':
                 stabilizer[j * 4] = 1
                 stabilizer[j * 4 + 3] = 1
-            elif pauli_code.stabilizers[i][j] == 'Z':
+            elif pauli_code.generator_vector[i][j] == 'Z':
                 stabilizer[j * 4+2] = 1
                 stabilizer[j * 4 +3] = 1
         majorana_code.push(MajoranaOperator(1j, stabilizer))

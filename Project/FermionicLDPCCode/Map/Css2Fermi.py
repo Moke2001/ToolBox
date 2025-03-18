@@ -1,19 +1,18 @@
 import numpy as np
-
-from QuantumComputation.ErrorCorrectionCode.FermiStabilizerCode.MajoranaOperator import MajoranaOperator
-from QuantumComputation.ErrorCorrectionCode.FermiStabilizerCode.FermiStabilizerCode import FermiStabilizerCode
+from Physics.QuantumComputation.ErrorCorrectionCode.FermiStabilizerCode.MajoranaOperator import MajoranaOperator
+from Physics.QuantumComputation.ErrorCorrectionCode.FermiStabilizerCode.FermiStabilizerCode import FermiStabilizerCode
 
 
 def css2fermi(css_code):
     fermionic_code = FermiStabilizerCode(css_code.N)
-    for i in range(len(css_code.stabilizers)):
+    for i in range(len(css_code.generator_vector)):
         stabilizer = [0] * fermionic_code.N*2
-        for j in range(len(css_code.stabilizers[i])):
-            if css_code.stabilizers[i][j] == 'X':
+        for j in range(len(css_code.generator_vector[i])):
+            if css_code.generator_vector[i][j] == 'X':
                 stabilizer[j*2] = 1
-            elif css_code.stabilizers[i][j] == 'Z':
+            elif css_code.generator_vector[i][j] == 'Z':
                 stabilizer[j*2+1] = 1
-            elif css_code.stabilizers[i][j] == 'Y':
+            elif css_code.generator_vector[i][j] == 'Y':
                 stabilizer[j*2] = 1
                 stabilizer[j*2+1] = 1
         num=0
